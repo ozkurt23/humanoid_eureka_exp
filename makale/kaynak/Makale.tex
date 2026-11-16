@@ -1,0 +1,176 @@
+% !TeX program = xelatex
+% UTF-8. Run from this directory. Figure data and generation code accompany the source.
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=22mm,bottom=19mm,left=20mm,right=20mm,headheight=14pt,headsep=7mm,footskip=11mm]{geometry}
+\usepackage{fontspec,graphicx,xcolor,fancyhdr,booktabs,hyperref}
+\setmainfont{Liberation Serif}
+\setsansfont{Lato-Regular.ttf}[BoldFont=Lato-Bold.ttf,ItalicFont=Lato-Italic.ttf,BoldItalicFont=Lato-BoldItalic.ttf]
+\setmonofont{DejaVu Sans Mono}[Scale=0.84]
+\definecolor{accent}{HTML}{943B42}
+\definecolor{ink}{HTML}{20282B}
+\definecolor{muted}{HTML}{546365}
+\definecolor{greyline}{HTML}{C4CCCA}
+\hypersetup{unicode=true,colorlinks=true,urlcolor=accent,linkcolor=accent,citecolor=accent,
+pdftitle={İki kalemle denge},pdfauthor={ozkurt23},pdfsubject={Beklenmedik yanal itmeler altında yürüyüş ve iki elde parmak ucu manipülasyonu}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\sffamily\small\bfseries HUMANOID\enspace /\enspace SİMÜLASYON ÇALIŞMALARI}
+\fancyhead[R]{\sffamily\small TEKNİK RAPOR}
+\fancyfoot[L]{\sffamily\small\color{muted}İki kalemle denge}
+\fancyfoot[R]{\sffamily\small\color{muted}\thepage\ / 7}
+\renewcommand{\headrulewidth}{0.55pt}
+\setlength\parindent{0pt}\setlength\parskip{4.8pt}
+\emergencystretch=2em
+\newcommand{\heading}[2]{\pdfbookmark[1]{#2}{sec#1}{\sffamily\bfseries\color{accent}\small #1}\par\vspace{1.5mm}{\fontsize{24}{27}\selectfont\bfseries #2\par}\vspace{2.5mm}}
+\linespread{1.045}\selectfont
+\newcommand{\sub}[1]{\par\vspace{2.5mm}{\sffamily\bfseries\large #1\par}}
+\newcommand{\captext}[2]{\par\vspace{0.4mm}{\raggedright\small\sffamily\color{muted}\textbf{#1.}\enspace #2\par}\par\vspace{2mm}}
+\newcommand{\fig}[2]{\begin{center}\includegraphics[width=#1\linewidth]{sekiller/#2.pdf}\end{center}}
+\newcommand{\shot}[2]{\includegraphics[width=#1\linewidth]{gorseller/#2.jpg}}
+\newcommand{\minititle}[1]{{\sffamily\bfseries\color{accent}#1}\par}
+\newcommand{\film}{\href{https://drive.google.com/file/d/1ie0wmTbqMH5YB14TXsx_susyWOL8ietK/view?usp=drivesdk}{55 saniyelik deney filmi}}
+\newcommand{\sepbar}{\par\vspace{1.5mm}{\color{greyline}\rule{\linewidth}{0.5pt}}\par}
+\begin{document}\color{ink}
+\pdfbookmark[1]{Özet}{ozet}
+{\sffamily\small\bfseries\color{accent} ROBOTİK\enspace /\enspace DENEYSEL ÇALIŞMA}\par
+\par\vspace{3mm}
+{\fontsize{38}{41}\selectfont\bfseries İki kalemle denge\par}
+\vspace{1mm}
+{\sffamily\fontsize{16}{20}\selectfont Beklenmedik yanal itmeler altında humanoid yürüyüşü\newline ve iki elde parmak ucu manipülasyonu\par}
+\par\vspace{2mm}
+{\sffamily ozkurt23\hfill 17 Kasım 2026}\par
+\sepbar
+\begin{center}
+\begin{minipage}[c]{.37\linewidth}\centering\includegraphics[height=56mm]{gorseller/govde.jpg}\end{minipage}\hfill
+\begin{minipage}[c]{.59\linewidth}\centering
+\includegraphics[width=\linewidth]{gorseller/kapak-sol.jpg}\\[1mm]
+\includegraphics[width=\linewidth]{gorseller/kapak-sag.jpg}
+\end{minipage}
+\end{center}
+\captext{Şekil 1}{Film kaydının 18,50. saniyesi. Solda belden itilen robot, sağ üstte sol el, sağ altta sağ el görülüyor. Üç görüntü aynı ana ait.}
+\sub{Özet}
+Yürüyen bir humanoid, beklenmedik bir itmenin ardından yana adım atarken iki kalemi parmak uçlarında hareket ettirmeyi sürdürebilir mi? Bu soruyu MuJoCo’da, iki V3 tendon eli taşıyan bir humanoidle sınadık. Denetleyici, gövdenin hareketinden dış kuvveti kestirdi ve olası ayak basışlarını ileri simülasyonla karşılaştırdı. On beş koşunun 12’si görev ölçütlerinin tümünü karşıladı. Denetleyici sabitlendikten sonra ayrılan altı yeni zamanlamanın beşinde görev tamamlandı. Filmdeki beş itmede yanal basışlar 15,2–29,4 cm, kalemlerin ele göre açısal hareketi 28,4–33,9° arasındaydı. Üç başarısız koşu denge izleme sınırına ulaştı.\par
+\vspace{4mm}
+{\sffamily\small\textbf{Anahtar sözcükler}\enspace Denge kurtarma, iki elli manipülasyon, model tabanlı denetim, MuJoCo.}\par
+{\sffamily\small\textbf{Video}\enspace\film\enspace /\enspace\href{https://github.com/ozkurt23/humanoid-dual-pen-recovery/blob/main/medya/Film.mp4}{Özel depodaki MP4}}\par
+\newpage
+
+\heading{01}{Görev ve yöntem}
+EUREKA, bir dil modelinin önerdiği ödül programlarıyla simüle bir Shadow Hand üzerinde kalem yönlendirme ve hızlı kalem çevirme davranışları öğrenir~\cite{eureka}. Bu çalışmanın çıkış noktası, kalemi el içinde hareket ettirme görevidir. Burada her kalemin hareketi, yürüyen bir humanoidin dengeyi yeniden kurması sırasında ölçülür. Son yürüyüş denetleyicisini geliştirmek için model tabanlı basış araması kullandık.
+\par\vspace{2mm}
+\begin{minipage}[c]{.47\linewidth}
+\sub{Simüle edilen düzenek}
+\texttt{priv\_humanoid} gövdesinde iki V3 tendon eli ve iki serbest kalem bulunur. Kalemleri parmak kuvvetleri taşır. MuJoCo~\cite{mujoco}, temas ve gövde hareketlerini 2 ms’lik fizik adımlarıyla hesaplar. Görüntüler hareket kaydından Blender’da üretilir.
+\end{minipage}\hfill
+\begin{minipage}[c]{.46\linewidth}
+\shot{1}{eller}
+\captext{Şekil 2a}{Bileklere ve elde taşınan iki ayrı kaleme üstten bakış.}
+\end{minipage}
+\sub{Denetleyici nasıl karar verir?}
+\textbf{Yükü kestirme.} Bir önceki fizik adımında ölçülen momentum değişimi, modelin öngördüğü değişimle karşılaştırılır. Yanal fark, dış yükü kestirmek için kullanılır. Robot yaklaşan itmenin başlangıç zamanını, yönünü veya süresini almaz.
+
+\textbf{Ayak basışını seçme.} Yük algılandığında simülatörün o anki durumu kopyalanır. Denetleyici ayak seçimini, adım zamanını ve basış konumunu değiştirerek fizik simülasyonları yürütür. Ölçülen yüke göre birkaç olası bırakma süresi denenir. Seçilen basış, asıl simülasyona uygulanır.
+
+\textbf{Yürüyüşe dönüş.} Ayaklar hem yana çok açılmış hem öne ve arkaya ayrılmışsa ilk uygun salınım adımı ayağı yana taşır. Destek açıklığı daralınca ileri adımlar başlar.
+\sepbar
+\minititle{Dış kuvvet üreteci}
+Kuvvet bel gövdesine iki yanal yönden uygulanır. Eski zamanlamalarda tepe değerleri sırasıyla 60, 75, 85, 100 ve 115 N’dur. Diğer koşularda beş ayrı zaman penceresi içinde başlangıç anı, yön ve tepe kuvveti (60–115 N) örneklenir. Tepe yükü 1–2 s sürer. Her olayın yükselme ve sönme geçişlerine 0,85–1,35 s arasında aynı süre atanır.
+
+\begin{center}
+\includegraphics[width=.488\linewidth]{gorseller/makro-sol-yatay.jpg}\hfill
+\includegraphics[width=.488\linewidth]{gorseller/makro-sag-yatay.jpg}
+\end{center}
+\captext{Şekil 2b}{V3 parmaklarının temas düzeni. Sol ve sağ el filmin farklı anlarında yakın planda görülüyor.}
+\newpage
+
+\heading{02}{Beş itme boyunca yürüyüş}
+Film için seçilen 924 numaralı koşu 55 s sürdü. Kamera her 5,5 saniyede bir değişirken simülasyonun aynı kaydı ilerledi. Aşağıdaki iki iz, basışlar arasındaki kısa duraklamaları ve yürüyüşün ne zaman yeniden başladığını kuvvetle aynı zaman ekseninde gösteriyor.
+\fig{.99}{yuk-ve-yuruyus}
+\captext{Şekil 3}{Üstte bel gövdesine uygulanan yanal kuvvet, altta belin başlangıca göre ileri konumu. Kuvvetin işareti yönü, taralı aralıklar yük uygulanan dönemleri gösterir. Net ilerleme 1,94 m’dir.}
+\sub{Yanal adım ve sonraki ileri yol}
+\fig{.98}{adimlar}
+\captext{Şekil 4}{Her itmede en uzun yanal basış ve ardından kat edilen net ileri yol. İleri yol, kuvvet bitiminden sonraki itmeye veya kaydın sonuna kadar ölçüldü.}
+İkinci itme 17,22. saniyede başladı. Tepe yükü 107,7 N’a ulaştı ve 1,82 s bu düzeyde kaldı. Robot itme yönünde 29,4 cm yana bastı, yük kalktıktan sonra yeniden ileri yürüdü ve bir sonraki itmeye kadar 30,2 cm ilerledi. Beş itme boyunca, kuvvet sıfıra indikten sonra en az 3,5 cm ileri basacak ayağın yerden kesilmesi 2,16–2,25 s sürdü.
+\newpage
+
+\heading{03}{Kalemin ele göre hareketi}
+Gövde, bilek ve kalem birlikte hareket edebilir. Parmakların kaleme kazandırdığı hareketi ayırmak için kalemin boyuna eksenini her elin kendi koordinat sisteminde izledik. Yakın planlarda aynı sütundaki görüntüler eşzamanlıdır.
+\par\vspace{2mm}
+\begin{center}\sffamily\small
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}rccc@{}}
+ &17,48 s&18,50 s&20,15 s\\[2pt]
+Sol&\shot{.295}{L-1050}&\shot{.295}{L-1111}&\shot{.295}{L-1210}\\
+Sağ&\shot{.295}{R-1050}&\shot{.295}{R-1111}&\shot{.295}{R-1210}
+\end{tabular}\end{center}
+\captext{Şekil 5}{İkinci itmede bileğe bağlı kameralar. Turuncu kalem sol elde, yeşil kalem sağ elde parmak uçları arasında yön değiştiriyor.}
+\fig{.99}{kalemler}
+\captext{Şekil 6}{Kalem ekseninin, ilgili bileğin x-z düzlemindeki işaretli eğimi. Taralı aralık ikinci itmenin süresini gösterir. Görev ölçütü için ayrıca üç boyutlu eksenler arasındaki en büyük açı farkı hesaplandı.}
+\sub{Tendon komutu ve kayma takibi}
+İki elin tendonları 3,2 s periyotla sürülür. Kalemin merkezini, bileğe göre başlangıç konumuyla 60 Hz’de karşılaştırdık. Kalem avuca doğru 6,8 mm veya uzunlamasına dışa doğru 10 mm kayma eşiğini aşınca ilgili elin salınım genliği yumuşakça ilk değerin \%75’ine iner.
+
+Filmdeki ikinci itmede kalem ekseninin üç boyutlu açı farkı iki elde de 33,9° oldu. Tüm filmde, kalem başparmak ile başka bir parmağın uç pedi arasında sol elde zamanın \%99,95’inde, sağ elde \%99,78’inde temas etti. Avuç teması kaydedilmedi. Deney, sınırlı açısal salınımı ölçer.
+\newpage
+
+\heading{04}{İtmenin etkisini ayırmak}
+Robotun daha yük uygulanmadan itme yönüne dönmesi, görülen tepkinin yorumunu değiştirirdi. Bunu sınamak için film kaydındaki beş itmenin her birine ayrı bir karşılaştırma koşusu kurduk.
+\par\vspace{3mm}
+\begin{minipage}[c]{.39\linewidth}\shot{1}{ayak}
+\captext{Şekil 7}{İkinci itme sırasında ayağın yere basışı.}
+\end{minipage}\hfill
+\begin{minipage}[c]{.54\linewidth}\minititle{Eşlenmiş karşılaştırma}
+Her çiftte başlangıç ve önceki olaylar aynı kaldı. Yalnızca incelenen kuvveti sıfırladık. İtmenin başlamasından önceki 500 Hz hareket ölçümleri iki koşuda örnek örnek eşleşti. İtmeden sonra belin yanal konum farkını ölçtük.
+\end{minipage}
+\sub{Belin işaretli yer değiştirmesi}
+\fig{.96}{eslenmis}
+\captext{Şekil 8}{Belin kontrol koşusuna göre yanal konum farkı (cm). Pozitif değer itme yönünü gösterir. İlk iki sütun itme başlangıcından itibaren süreyi, son iki sütun yük profilindeki olayları gösterir.}
+İlk itmenin ilk saniyesinde bel karşılaştırma koşusuna göre 6,2 cm ters yöne gitti. Tepe yükünün sonuna gelindiğinde ise fark 13,3 cm ile itme yönündeydi. Beş olayın tamamında tepe yükü sona erdiğinde fark aynı işareti aldı. İkinci olayda bu fark 40,0 cm’ye ulaştı. Bu karşılaştırma, yürüyüş ritminden gelen hareketi dış kuvvetin ek etkisinden ayırmaya olanak verdi.
+\newpage
+
+\heading{05}{On beş koşunun sonuçları}
+Önceki dört zamanlama, film dâhil beş ek koşu ve denetleyici sabitlendikten sonra ayrılan altı yeni zamanlama aynı başarı ölçütleriyle değerlendirildi. Bu gruplarda sırasıyla \textbf{4/4}, \textbf{3/5} ve \textbf{5/6} koşu görevi tamamladı.
+\begin{center}\sffamily\small
+\renewcommand{\arraystretch}{1.26}\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrcc@{}}\toprule
+Kayıt & Süre (s) & İleri (m) & Yanal adım & İleri yürüyüş & Avuç teması & Sonuç \\ \midrule
+714 & 55,000 & 2,00 & 5/5 & 5/5 & Yok & Geçti \\
+715 & 55,000 & 1,97 & 5/5 & 5/5 & Yok & Geçti \\
+716 & 55,000 & 1,92 & 5/5 & 5/5 & Yok & Geçti \\
+727 & 55,000 & 1,97 & 5/5 & 5/5 & Yok & Geçti \\
+905 & 55,000 & 1,97 & 5/5 & 5/5 & Yok & Geçti \\
+924 & 55,000 & 1,94 & 5/5 & 5/5 & Yok & Geçti \\
+\textcolor{accent}{\bfseries 1042} & 17,518 & 0,60 & 1/5 & 1/5 & Var & Eksik \\
+1051 & 55,000 & 2,18 & 5/5 & 5/5 & Yok & Geçti \\
+\textcolor{accent}{\bfseries 1052} & 25,970 & 0,94 & 3/5 & 2/5 & Yok & Eksik \\
+\textcolor{accent}{\bfseries 1071} & 48,682 & 1,10 & 5/5 & 4/5 & Var & Eksik \\
+1072 & 55,000 & 1,93 & 5/5 & 5/5 & Yok & Geçti \\
+1073 & 55,000 & 1,80 & 5/5 & 5/5 & Yok & Geçti \\
+1074 & 55,000 & 1,94 & 5/5 & 5/5 & Yok & Geçti \\
+1075 & 55,000 & 1,79 & 5/5 & 5/5 & Yok & Geçti \\
+1076 & 55,000 & 1,99 & 5/5 & 5/5 & Yok & Geçti \\
+\bottomrule\end{tabular*}\end{center}
+\captext{Tablo 1}{Her koşuda beş itme planlandı. Erken biten kayıtlarda ulaşılamayan olaylar başarılmış sayılmadı. 1071–1076 numaraları sonradan ayrılan gruptur.}
+\sub{Bir koşunun geçmesi için}
+\textbf{Denge ve adım.} Robotun 55 s boyunca ayakları dışında zemine değmemesi gerekir. Yanal basış sayılması için ayak en az 30 ms yerden kesilmeli, en az 5 mm yükselmeli ve itme yönünde en az 3 cm yana basmalıdır. Her itme sonrasında belin ileri yönde en az 2 cm net yol alması gerekir.
+
+\textbf{İki elde manipülasyon.} Her elde karşılıklı parmak ucu teması koşunun en az \%98’ini kapsamalı, avuç teması olmamalıdır. Her itme boyunca her kalemin üç boyutlu ekseni kendi eline göre en az 15° hareket etmelidir.
+
+\textbf{Başarısız kayıtlar.} 1042 ve 1052 numaralı koşular sırasıyla 17,52 ve 25,97 s’de denge izleme sınırını aştı. 1071’de beşinci adım atıldı, ancak yükten sonra ileri yürüyüş tamamlanamadı ve avuç teması görüldü.
+\newpage
+
+\heading{06}{Tartışma ve yeniden üretim}
+\sub{Destek açıklığının rolü}
+Bir itmenin ardından ayaklar bazen hem yana çok açılıyor hem öne arkaya ayrılıyordu. Bu duruştan öndeki ayağı tekrar ileri göndermek bir sonraki denge adımına kalan alanı küçültüyordu. Dönüş adımında önce açıklığı daraltacak ayağı yana yerleştirdik. 714 numaralı kayıtta beşinci itme öncesi açıklık 79 cm’den 49 cm’ye indi. Basış konumunun dengeyi geri kazanmada belirleyici olduğu, basitleştirilmiş iki ayaklı modellerde de gösterilmiştir~\cite{capture}.
+\sub{Geçerlilik sınırları}
+Sonuçlar tek bir humanoid modeli, iki V3 el, düz zemin ve bele iki yandan uygulanan yükler için ölçüldü. Altı yeni zamanlama, güvenilirlik oranını geniş bir kuvvet dağılımına taşımak için küçük bir örneklemdir. Aday basışların yerel işlemcide değerlendirilmesi, simüle edilen süreden uzun sürebilir. Fiziksel robotta algılama gürültüsü, gecikme, farklı zeminler ve gerçek zamanlı çalışma ayrıca sınanmalıdır.
+\sub{Deneyin tekrarı}
+Arşivdeki model, denetleyici ve bağımlılıklar kurulduğunda aşağıdaki komut 924 numaralı film koşusunu yeniden üretir. Koşu numarası dış kuvvet takvimini seçer.
+\begin{quote}\ttfamily bash work/parmak\_denge/run.sh 924\end{quote}
+Hareket kaydı gövde pozlarını 60 Hz’de, fizik ve temas ölçümlerini 500 Hz’de içerir. Bu makalenin yanında düzenlenebilir LaTeX kaynağı, grafik verileri ve yakın planların özgün kare numaraları bulunur. \film{} aynı fizik koşusunu on sabit süreli planda gösterir.
+\vspace{1mm}
+\renewcommand{\refname}{Kaynakça}
+\begin{thebibliography}{9}\small\raggedright
+\bibitem{eureka} Y. J. Ma ve diğerleri. \href{https://eureka-research.github.io/}{Eureka: Human-Level Reward Design via Coding Large Language Models}. \textit{International Conference on Learning Representations}, 2024.
+\bibitem{mujoco} E. Todorov, T. Erez ve Y. Tassa. \href{https://homes.cs.washington.edu/~todorov/papers/TodorovIROS12.pdf}{MuJoCo: A physics engine for model-based control}. \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems}, 2012.
+\bibitem{capture} J. Pratt, J. Carff, S. Drakunov ve A. Goswami. \href{https://doi.org/10.1109/ICHR.2006.321385}{Capture Point: A Step toward Humanoid Push Recovery}. \textit{IEEE-RAS International Conference on Humanoid Robots}, 2006.
+\end{thebibliography}
+\end{document}

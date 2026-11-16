@@ -41,3 +41,5 @@ Başarı, 55 saniye boyunca ayak dışında yere değmeden beş itmenin **her bi
 - **Qi ve ark.** Farklı nesneleri el içinde döndürme ve hareketi fiziksel ele aktarma üzerine karşılaştırmalı bir çalışma. [In-Hand Object Rotation via Rapid Motor Adaptation](https://proceedings.mlr.press/v205/qi23a.html)
 - **Pratt ve ark.** Yanal bozucu kuvvetin ardından atılacak denge adımının konumunu açıklayan *capture point* yaklaşımı. [Capture Point: A Step toward Humanoid Push Recovery](https://doi.org/10.1109/ICHR.2006.321385)
 - **Proje dosyaları.** [Tam arşiv ve geri yükleme](arsiv/README.md) · [Proje ve yayın planı](docs/Proje-plani.md)
+
+Hazır film koşusunu yerel bir Ubuntu kurulumunda üretmek için [yeniden çalıştırma adımlarını](docs/Yeniden-calistirma.md) izleyin. Bu depodaki taşınabilir model ile 924 numaralı kayıt yeniden çalıştırıldı. Pozlar, eklem durumları, temaslar ve her iki kalemin tüm örnekleri film kaydıyla birebir eşleşti.

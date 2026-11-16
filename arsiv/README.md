@@ -27,3 +27,25 @@ Arşiv özgün proje dizinindeki deney çalışmalarını ve sonuçları kapsar.
 Son deney denetleyicisi açılan klasörde `work/parmak_denge`, fizik modeli `work/duet`, render programı `work/surpriz_film`, son çıktılar `outputs/surpriz-denge` altındadır. Komutların kullandığı Ubuntu Python ortamının paket ve sürüm listesi `provenance/python-packages.txt` dosyasında verilmiştir. Tam sistem kurulumu ve kullanıcı hesabındaki genel çalışma ortamı, proje dizininin dışındadır. `work/parmak_denge/README.md` yeniden çalıştırma ayrıntılarını içerir.
 
 Arşivde toplam 52.692 envanter kaydı, 51.240 normal dosya yolu ve 39.027 farklı dosya içeriği vardır. Sıkıştırılmış akış 17.124.660.084 bayttır.
+
+### GitHub üzerinden toplu indirme
+
+Depo kökünde, bu özel depoya erişen hesapla GitHub CLI oturumunu açtıktan sonra aşağıdaki komutları çalıştırın. İndirme kesilirse aynı komut önceden doğrulanmış parçaları atlar.
+
+```bash
+python3 arsiv/indir.py parcalar
+python3 arsiv/arsiv.py parcalar --ac deney-kopyasi
+```
+
+[Özel sürümü GitHub'da aç](https://github.com/ozkurt23/humanoid-dual-pen-recovery/releases/tag/v1.0.0)
+## Farklı dizinde çalıştırma
+
+Özgün birleşik MuJoCo modellerinin ağ yolları deneyin önceki konumunu içerir. Yeni konumda aşağıdaki komut iki taşınabilir XML kopyası oluşturur. `MODEL` değişkeniyle bunlardan birleşik modele ait olanı seçin. İşletim sisteminde kaynak projedeki `~/env_isaaclab` Python ortamının veya bu adla kurulmuş eşdeğerinin bulunması gerekir.
+
+```sh
+python3 tasinabilir-model.py deney-kopyasi
+cd deney-kopyasi
+MODEL=duet.portable.xml bash work/parmak_denge/run.sh 924
+```
+
+Tam sıkıştırılmış akışın SHA-256 özeti `0a2b7790b7ef56ca45990fea8393f49ef6cf14b470f34e8daea256a165351102` olarak doğrulandı. Envanterdeki 52.692 yol ayrı bir klasöre geri yüklendi ve bütünlükleri kontrol edildi.

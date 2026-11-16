@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f2f0e9">
+<title>İtme altında iki kalemle yürüyüş · Araştırma filmi</title>
+<style>
+@font-face{font-family:Instrument;src:url('tipografi/InstrumentSerif-Regular.ttf') format('truetype');font-display:swap}
+@font-face{font-family:Inter;src:url('tipografi/Inter.ttf') format('truetype');font-display:swap;font-weight:100 900}
+:root{--bg:#f4f2ec;--ink:#202821;--muted:#4d5b51;--line:#cacdc0;--dark:#21392d;--light:#ebf3d5;--serif:Instrument,Georgia,serif;--sans:Inter,Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans)}a{color:inherit}a:focus-visible,button:focus-visible{outline:3px solid #b45729;outline-offset:4px}
+main,header,footer{max-width:1480px;margin:auto;padding:0 clamp(22px,5vw,82px)}header{display:flex;align-items:center;justify-content:space-between;gap:18px;height:70px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:650}.mark{display:grid;grid-template-columns:repeat(2,8px);gap:2px;transform:rotate(-12deg)}.mark i{height:9px;background:var(--dark)}.mark i:nth-child(2),.mark i:nth-child(3){background:#b7c4a6}
+nav{display:flex;align-items:center;gap:28px;font-size:13px}nav a{text-decoration:none}nav a:hover,.link:hover{text-decoration:underline}.hero{display:grid;grid-template-columns:1.45fr 1fr;gap:6%;align-items:end;padding:42px 0 33px}.hero h1,h2,h3,p{margin:0}h1,h2,h3{font-family:var(--serif);font-weight:400}.kicker,.meta,.caption,.counter{font-size:11px;letter-spacing:.08em;font-weight:600;text-transform:uppercase}.kicker{color:var(--muted);margin-bottom:12px}h1{font-size:clamp(64px,6.35vw,102px);line-height:.96;letter-spacing:-.035em}h2{font-size:clamp(36px,4.3vw,67px);line-height:1.02;letter-spacing:-.025em}h3{font-size:31px;line-height:1.12}.hero p{max-width:490px;font-size:clamp(14px,1.25vw,18px);color:var(--muted);line-height:1.55}.links{display:flex;gap:17px;align-items:center;flex-wrap:wrap;margin-top:19px}.btn,.link{font:600 13px var(--sans);text-decoration:none}.btn{display:inline-flex;align-items:center;gap:10px;background:var(--dark);color:#fff;border-radius:30px;padding:12px 20px}.btn:hover{background:#364e3e}.link{text-decoration:underline;text-underline-offset:4px}
+.viewer{border:1px solid #304435;background:var(--dark);color:var(--bg);padding:clamp(11px,1.3vw,20px);border-radius:4px}.movie{display:grid;grid-template-columns:minmax(0,3.1fr) minmax(200px,1fr);gap:clamp(14px,2.5vw,40px);align-items:center}video{display:block;width:100%;background:#171d17;aspect-ratio:16/9;border-radius:1px;object-fit:contain}.side{padding-right:14px}.side .kicker{color:#ccd8c4}.side h2{font-size:clamp(35px,3.3vw,51px)}dl{margin:17px 0 0}dl>div{display:flex;justify-content:space-between;align-items:center;gap:7px;border-top:1px solid #536c5a;padding:10px 0}dt{font-size:12px;color:#d5dfd1}dd{margin:0;font-size:15px;font-weight:650;text-align:right;font-variant-numeric:tabular-nums}.viewer .caption{color:#d2ddce}.nav-events{display:flex;align-items:center;gap:14px;border-top:1px solid #536c5a;padding:14px 0 0;margin-top:14px}.eventbuttons{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;flex:1}.eventbuttons button{display:flex;gap:6px;justify-content:center;align-items:center;font:600 13px var(--sans);border-radius:2px;min-height:36px;padding:7px 8px;color:#f5f6ed;background:#2b4635;border:1px solid #536c5a;cursor:pointer}.eventbuttons button span{font-weight:400;color:#d0d9c9}.eventbuttons button:hover{background:#3b5542}.eventbuttons button[aria-pressed=true]{background:var(--light);color:var(--ink);border-color:var(--light)}.eventbuttons button[aria-pressed=true] span{color:#475543}
+section.block{margin:70px 0 0;border-top:1px solid var(--line);padding-top:25px}.block-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin-bottom:25px}.research{display:grid;grid-template-columns:repeat(3,1fr);margin-bottom:22px}.research article{padding:4px 22px 4px 0}.research article+article{padding-left:22px;border-left:1px solid var(--line)}.research strong{font:400 clamp(42px,4vw,66px)/1 var(--serif);letter-spacing:-.03em}.research p{color:var(--muted);margin-top:8px;font-size:14px}.double{display:grid;grid-template-columns:1fr 1fr;gap:22px}figure{margin:0}figure img{display:block;width:100%;aspect-ratio:1.75;object-fit:cover}figcaption{margin-top:8px;color:var(--muted);font-size:13px}.prose{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:26px}.prose p{color:var(--muted);margin-top:9px}.prose a{display:inline-block;margin-top:12px}footer{margin-top:65px;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:80px;color:var(--muted);font-size:13px}footer a{margin-left:16px}@media(max-width:880px){.hero{grid-template-columns:1.1fr 1fr;gap:22px}.movie{grid-template-columns:minmax(0,2.8fr) minmax(175px,1fr);gap:15px}.side{padding-right:0}dl>div{padding:6px 0}dt{font-size:11px}dd{font-size:13px}.eventbuttons button{flex-direction:column;gap:1px}.nav-events{align-items:center}.eventbuttons button span{font-size:10px}}
+@media(max-width:660px){header{height:57px}nav{gap:13px}.brand,nav{font-size:11px}.hero{grid-template-columns:1fr;padding:28px 0 23px;gap:16px}.hero h1{font-size:clamp(56px,13vw,76px)}.links{margin-top:13px}.movie{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 2.2fr;align-items:center;gap:8px}.side .kicker{grid-column:1/-1;margin:0}.side h2{font-size:30px}.side dl{margin:0}.side dl>div{padding:2px 0}.nav-events{display:block;margin-top:10px;padding-top:8px}.nav-events>.caption{display:block;margin-bottom:7px}.eventbuttons{gap:3px}.eventbuttons button{padding:5px 1px;font-size:11px}.double,.prose{grid-template-columns:1fr;gap:18px}.research p{font-size:12px}.research article{padding-right:8px}.research article+article{padding-left:9px}.block-head{display:block}.block-head a{display:inline-block;margin-top:9px}section.block{margin-top:40px}.prose h3{font-size:28px}footer{align-items:flex-start;flex-direction:column;justify-content:center}footer a{margin:0 10px 0 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>İnsansı robot · V3</div><nav aria-label="Ana menü"><a href="#film">Film</a><a href="#sonuclar">Sonuçlar</a><a href="makale/Makale.pdf">Makale ↗</a></nav></header>
+<main>
+<div class="hero"><div><div class="kicker">MuJoCo · Robotik simülasyon</div><h1>İtme altında iki<br>kalemle yürüyüş</h1></div><div><p>Bir insansı robot iki kalemi parmak uçlarında hareket ettirirken beklenmedik bir itmeden sonra nereye basar?</p><div class="links"><a class="btn" href="makale/Makale.pdf">Makaleyi oku <span aria-hidden="true">↗</span></a><a class="link" href="veri/Deney-ve-olcumler.md">Ölçümleri incele</a></div></div></div>
+<section class="viewer" id="film" aria-label="Eşzamanlı deney filmi ve olay ölçümleri"><div class="movie"><video id="video" controls preload="metadata" playsinline poster="medya/Film-kapagi.jpg" aria-label="Beş itme ve iki kalem, 55 saniyelik araştırma filmi"><source src="medya/Film.mp4" type="video/mp4"><a href="medya/Film.mp4">MP4 dosyasını aç</a></video><div class="side"><div class="kicker">Kayıt 924 · olay ölçümleri</div><h2 id="name">İkinci itme</h2><dl id="values"><div><dt>Tepe yükü</dt><dd>107,7 N</dd></div><div><dt>Yükte kalma</dt><dd>1,82 s</dd></div><div><dt>Yanal adım</dt><dd>29,4 cm</dd></div><div><dt>Sol / sağ kalem</dt><dd>33,9° / 33,9°</dd></div></dl></div></div><div class="nav-events"><span class="caption">İtmeye git</span><div class="eventbuttons" id="buttons"></div></div></section>
+<section class="block" id="sonuclar"><div class="block-head"><h2>On beş koşuda denge</h2><a class="link" href="veri/Deney-ve-olcumler.md">Koşu tablosunu aç ↗</a></div><div class="research"><article><strong>12 / 15</strong><p>Tüm koşulların birlikte sağlandığı koşu sayısı</p></article><article><strong>5 / 6</strong><p>Denetleyici sabitlendikten sonra ayrılan yeni zamanlamalarda başarı</p></article><article><strong>1,94 m</strong><p>Filmde beş itmeye rağmen alınan net ileri yol</p></article></div><div class="double"><figure><img src="medya/Sol-kalem.jpg" loading="lazy" alt="Sol V3 elinin parmak uçlarında turuncu kalem"><figcaption>Sol el · Film boyunca karşılıklı parmak ucu teması %99,95.</figcaption></figure><figure><img src="medya/Sag-kalem.jpg" loading="lazy" alt="Sağ V3 elinin parmak uçlarında yeşil kalem"><figcaption>Sağ el · Film boyunca karşılıklı parmak ucu teması %99,78.</figcaption></figure></div>
+<div class="prose"><article><h3>İtme gerçekleştiğinde</h3><p>Denetleyici yanal yükü robotun hareketinden kestirir. O anda farklı ayak basışlarını simüle eder. Beş itmenin her birinde yük kalktıktan 2,16–2,25 saniye sonra robot ilk ileri adım için ayağını yerden kaldırdı.</p><a class="link" href="makale/Makale.pdf">Yöntemi oku ↗</a></article><article><h3>İtme kaldırıldığında</h3><p>İkinci itmenin çıkarıldığı eşlenmiş koşuyla karşılaştırıldığında belin konumu, tepe yükünün sonunda itme yönünde 40,0 cm farklıydı. Bu deneylerde yanal kuvvetler 60–115 N aralığında kaldı. 1042, 1052 ve 1071 numaralı koşular denge sınırında durdu.</p><a class="link" href="veri/Olcumler.json">Sayısal sonuçları aç ↗</a></article></div></section>
+</main><footer><span>MuJoCo simülasyonu · Blender filmi · 1080p / 60 fps</span><div><a href="arsiv/README.md">Proje arşivi</a><a href="docs/Proje-plani.md">Çalışma planı</a></div></footer>
+<script>
+const events=[
+ {t:6.098,n:'Birinci',f:'62,8',h:'1,77',x:'15,8',l:'32,8',r:'33,6'},
+ {t:17.222,n:'İkinci',f:'107,7',h:'1,82',x:'29,4',l:'33,9',r:'33,9'},
+ {t:27.044,n:'Üçüncü',f:'103,6',h:'1,30',x:'18,9',l:'30,6',r:'28,4'},
+ {t:34.882,n:'Dördüncü',f:'104,8',h:'1,23',x:'15,2',l:'30,9',r:'30,5'},
+ {t:45.962,n:'Beşinci',f:'63,2',h:'1,70',x:'20,3',l:'32,3',r:'33,9'}
+];
+const video=document.getElementById('video');
+const buttons=document.getElementById('buttons');
+const title=document.getElementById('name');
+const labels=document.querySelectorAll('#values dt');
+const values=document.querySelectorAll('#values dd');
+let selected=-2;
+function show(i){
+ if(selected===i)return;
+ selected=i;
+ const row=events[i];
+ title.textContent=row?row.n+' itme':'Film kaydı';
+ const names=row?['Tepe yükü','Yükte kalma','Yanal adım','Sol / sağ kalem']:['Süre','Kamera açısı','Yanal itme','İleri yol'];
+ labels.forEach((v,j)=>v.textContent=names[j]);
+ const display=row?[row.f+' N',row.h+' s',row.x+' cm',row.l+'° / '+row.r+'°']:['55 s','10','5','1,94 m'];
+ values.forEach((v,j)=>v.textContent=display[j]);
+ Array.from(buttons.children).forEach((b,j)=>b.setAttribute('aria-pressed',String(i===j)));
+}
+events.forEach((e,i)=>{
+ const b=document.createElement('button');
+ b.type='button';
+ b.setAttribute('aria-label',(i+1)+'. itmeye git, '+e.t.toFixed(2).replace('.',',')+' saniye');
+ b.append(document.createTextNode((i+1)+'. itme '));
+ const time=document.createElement('span');time.textContent=e.t.toFixed(1).replace('.',',')+' s';b.append(time);
+ b.addEventListener('click',()=>{video.currentTime=e.t;show(i);video.play().catch(()=>{});});
+ buttons.append(b);
+});
+function sync(){show(events.filter(e=>video.currentTime+.001>=e.t).length-1)}
+video.addEventListener('timeupdate',sync);video.addEventListener('seeked',sync);video.addEventListener('play',sync);
+show(-1);
+</script>
+</body></html>

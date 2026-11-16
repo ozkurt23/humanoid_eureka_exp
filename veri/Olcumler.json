@@ -1,0 +1,3095 @@
+{
+  "take": {
+    "name": "final",
+    "seconds": 55.0,
+    "min_height": 0.916,
+    "forward": 1.941,
+    "opposed": [
+      99.95,
+      99.78
+    ],
+    "palm": 0.0,
+    "ground": 0.0,
+    "events": [
+      {
+        "shaft_deg": [
+          32.8,
+          33.6
+        ],
+        "roll_range_deg": 2.2,
+        "landings": [
+          {
+            "side": "L",
+            "shift_cm": 15.8,
+            "lift_cm": 2.5
+          },
+          {
+            "side": "R",
+            "shift_cm": 10.3,
+            "lift_cm": 1.1
+          }
+        ],
+        "t": 6.102,
+        "force": -62.8,
+        "support": "both",
+        "step_cm": 23.0,
+        "walk_cm": 36.7,
+        "pen_deg": [
+          36.7,
+          37.8
+        ]
+      },
+      {
+        "shaft_deg": [
+          33.9,
+          33.9
+        ],
+        "roll_range_deg": 5.2,
+        "landings": [
+          {
+            "side": "L",
+            "shift_cm": 29.4,
+            "lift_cm": 2.0
+          },
+          {
+            "side": "R",
+            "shift_cm": 0.1,
+            "lift_cm": 0.4
+          },
+          {
+            "side": "R",
+            "shift_cm": 0.1,
+            "lift_cm": 0.3
+          }
+        ],
+        "t": 17.224,
+        "force": -107.7,
+        "support": "both",
+        "step_cm": 39.5,
+        "walk_cm": 30.2,
+        "pen_deg": [
+          36.3,
+          35.4
+        ]
+      },
+      {
+        "shaft_deg": [
+          30.6,
+          28.4
+        ],
+        "roll_range_deg": 3.3,
+        "landings": [
+          {
+            "side": "L",
+            "shift_cm": -0.0,
+            "lift_cm": 1.0
+          },
+          {
+            "side": "L",
+            "shift_cm": 18.9,
+            "lift_cm": 2.0
+          },
+          {
+            "side": "L",
+            "shift_cm": -0.1,
+            "lift_cm": 0.2
+          },
+          {
+            "side": "L",
+            "shift_cm": 0.2,
+            "lift_cm": 0.4
+          },
+          {
+            "side": "L",
+            "shift_cm": -0.7,
+            "lift_cm": 0.1
+          },
+          {
+            "side": "R",
+            "shift_cm": 14.9,
+            "lift_cm": 2.7
+          }
+        ],
+        "t": 27.046,
+        "force": 103.6,
+        "support": "both",
+        "step_cm": 20.3,
+        "walk_cm": 15.7,
+        "pen_deg": [
+          35.6,
+          37.5
+        ]
+      },
+      {
+        "shaft_deg": [
+          30.9,
+          30.5
+        ],
+        "roll_range_deg": 5.0,
+        "landings": [
+          {
+            "side": "L",
+            "shift_cm": 11.1,
+            "lift_cm": 3.9
+          },
+          {
+            "side": "L",
+            "shift_cm": 0.7,
+            "lift_cm": 0.1
+          },
+          {
+            "side": "L",
+            "shift_cm": 0.2,
+            "lift_cm": 0.0
+          },
+          {
+            "side": "L",
+            "shift_cm": -0.6,
+            "lift_cm": 0.3
+          },
+          {
+            "side": "R",
+            "shift_cm": 15.2,
+            "lift_cm": 1.7
+          }
+        ],
+        "t": 34.884,
+        "force": 104.8,
+        "support": "R",
+        "step_cm": 24.7,
+        "walk_cm": 39.5,
+        "pen_deg": [
+          36.8,
+          41.5
+        ]
+      },
+      {
+        "shaft_deg": [
+          32.3,
+          33.9
+        ],
+        "roll_range_deg": 2.3,
+        "landings": [
+          {
+            "side": "L",
+            "shift_cm": 20.3,
+            "lift_cm": 4.1
+          },
+          {
+            "side": "L",
+            "shift_cm": 0.5,
+            "lift_cm": 0.5
+          },
+          {
+            "side": "R",
+            "shift_cm": 0.9,
+            "lift_cm": 0.1
+          },
+          {
+            "side": "R",
+            "shift_cm": 15.2,
+            "lift_cm": 1.9
+          }
+        ],
+        "t": 45.964,
+        "force": -63.2,
+        "support": "R",
+        "step_cm": 24.5,
+        "walk_cm": 24.7,
+        "pen_deg": [
+          40.6,
+          37.8
+        ]
+      }
+    ]
+  },
+  "paired": [
+    {
+      "restart_s": 2.156,
+      "onset": 6.098,
+      "plateau": 1.766,
+      "force": -62.806262659883636,
+      "foot_cm": 15.8,
+      "walk_cm": 36.7,
+      "shaft": [
+        32.8,
+        33.6
+      ],
+      "paired": [
+        -3.470121818302295,
+        -6.16391118842788,
+        13.346962178106878,
+        10.797654903308185
+      ]
+    },
+    {
+      "restart_s": 2.246,
+      "onset": 17.222,
+      "plateau": 1.82,
+      "force": -107.70079074010445,
+      "foot_cm": 29.4,
+      "walk_cm": 30.2,
+      "shaft": [
+        33.9,
+        33.9
+      ],
+      "paired": [
+        21.15242851663747,
+        27.653196852152607,
+        40.0004031479636,
+        7.261624581438025
+      ]
+    },
+    {
+      "restart_s": 2.212,
+      "onset": 27.044,
+      "plateau": 1.302,
+      "force": 103.62048726437263,
+      "foot_cm": 18.9,
+      "walk_cm": 15.7,
+      "shaft": [
+        30.6,
+        28.4
+      ],
+      "paired": [
+        2.507060253057225,
+        -0.86314859666905,
+        4.166656770203442,
+        24.67097923132665
+      ]
+    },
+    {
+      "restart_s": 2.204,
+      "onset": 34.882,
+      "plateau": 1.226,
+      "force": 104.76685622681313,
+      "foot_cm": 15.2,
+      "walk_cm": 39.5,
+      "shaft": [
+        30.9,
+        30.5
+      ],
+      "paired": [
+        2.935495514391656,
+        1.20315308802042,
+        12.427115696394859,
+        17.170984832645487
+      ]
+    },
+    {
+      "restart_s": 2.19,
+      "onset": 45.962,
+      "plateau": 1.702,
+      "force": -63.236765356552525,
+      "foot_cm": 20.3,
+      "walk_cm": 24.7,
+      "shaft": [
+        32.3,
+        33.9
+      ],
+      "paired": [
+        8.345218386680619,
+        11.302675897145004,
+        18.2342079862854,
+        27.177770125316364
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "data": {
+        "name": "z714",
+        "seconds": 55.0,
+        "min_height": 0.906,
+        "forward": 1.999,
+        "opposed": [
+          99.93,
+          100.0
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              29.5,
+              31.0
+            ],
+            "roll_range_deg": 1.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 20.0,
+                "lift_cm": 1.7
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.4,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 5.0,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 20.5,
+                "lift_cm": 0.8
+              }
+            ],
+            "t": 6.728,
+            "force": 60.0,
+            "support": "L",
+            "step_cm": 24.7,
+            "walk_cm": 31.1,
+            "pen_deg": [
+              36.6,
+              36.3
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.7,
+              29.9
+            ],
+            "roll_range_deg": 3.0,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 27.1,
+                "lift_cm": 3.8
+              },
+              {
+                "side": "R",
+                "shift_cm": -1.7,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 16.222,
+            "force": -75.0,
+            "support": "R",
+            "step_cm": 31.3,
+            "walk_cm": 42.7,
+            "pen_deg": [
+              36.2,
+              37.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              31.3,
+              28.2
+            ],
+            "roll_range_deg": 2.5,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 19.1,
+                "lift_cm": 1.9
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 15.9,
+                "lift_cm": 1.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 6.1,
+                "lift_cm": 1.2
+              }
+            ],
+            "t": 27.374,
+            "force": 85.0,
+            "support": "both",
+            "step_cm": 23.2,
+            "walk_cm": 49.5,
+            "pen_deg": [
+              39.3,
+              38.9
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.2,
+              31.2
+            ],
+            "roll_range_deg": 3.3,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 24.6,
+                "lift_cm": 1.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.1,
+                "lift_cm": 4.6
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.5,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 39.712,
+            "force": -100.0,
+            "support": "L",
+            "step_cm": 34.1,
+            "walk_cm": 5.3,
+            "pen_deg": [
+              39.4,
+              39.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              28.1,
+              33.9
+            ],
+            "roll_range_deg": 4.1,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 19.2,
+                "lift_cm": 1.7
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.0,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 12.0,
+                "lift_cm": 1.2
+              }
+            ],
+            "t": 46.85,
+            "force": 115.0,
+            "support": "both",
+            "step_cm": 25.2,
+            "walk_cm": 15.3,
+            "pen_deg": [
+              39.5,
+              38.4
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z715",
+        "seconds": 55.0,
+        "min_height": 0.912,
+        "forward": 1.971,
+        "opposed": [
+          100.0,
+          99.98
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              29.3,
+              30.4
+            ],
+            "roll_range_deg": 2.7,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 17.7,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 22.0,
+                "lift_cm": 2.8
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.4,
+                "lift_cm": 0.6
+              }
+            ],
+            "t": 6.35,
+            "force": 60.0,
+            "support": "both",
+            "step_cm": 26.4,
+            "walk_cm": 37.5,
+            "pen_deg": [
+              37.5,
+              36.9
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.1,
+              30.5
+            ],
+            "roll_range_deg": 2.5,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 23.6,
+                "lift_cm": 2.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 20.7,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.2,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 16.296,
+            "force": -75.0,
+            "support": "both",
+            "step_cm": 25.5,
+            "walk_cm": 46.7,
+            "pen_deg": [
+              40.0,
+              35.7
+            ]
+          },
+          {
+            "shaft_deg": [
+              31.4,
+              30.7
+            ],
+            "roll_range_deg": 4.6,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 3.1,
+                "lift_cm": 4.4
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.8,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": -1.2,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 21.0,
+                "lift_cm": 2.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.3,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 28.248,
+            "force": 85.0,
+            "support": "R",
+            "step_cm": 24.6,
+            "walk_cm": 38.5,
+            "pen_deg": [
+              41.4,
+              39.7
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.9,
+              33.1
+            ],
+            "roll_range_deg": 4.0,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 28.4,
+                "lift_cm": 2.3
+              },
+              {
+                "side": "R",
+                "shift_cm": -4.8,
+                "lift_cm": 0.5
+              }
+            ],
+            "t": 38.93,
+            "force": -100.0,
+            "support": "both",
+            "step_cm": 34.3,
+            "walk_cm": 13.3,
+            "pen_deg": [
+              39.7,
+              39.8
+            ]
+          },
+          {
+            "shaft_deg": [
+              28.1,
+              34.0
+            ],
+            "roll_range_deg": 3.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 1.3,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.0,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "L",
+                "shift_cm": 18.5,
+                "lift_cm": 2.1
+              },
+              {
+                "side": "L",
+                "shift_cm": -1.4,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 13.3,
+                "lift_cm": 1.5
+              }
+            ],
+            "t": 46.544,
+            "force": 115.0,
+            "support": "R",
+            "step_cm": 24.3,
+            "walk_cm": 16.4,
+            "pen_deg": [
+              40.0,
+              38.7
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z716",
+        "seconds": 55.0,
+        "min_height": 0.918,
+        "forward": 1.919,
+        "opposed": [
+          99.8,
+          99.87
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              32.1,
+              32.3
+            ],
+            "roll_range_deg": 1.8,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 23.7,
+                "lift_cm": 2.6
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 0.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 18.8,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.1,
+                "lift_cm": 0.5
+              }
+            ],
+            "t": 7.1,
+            "force": -60.0,
+            "support": "both",
+            "step_cm": 25.1,
+            "walk_cm": 36.9,
+            "pen_deg": [
+              35.5,
+              37.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.3,
+              33.4
+            ],
+            "roll_range_deg": 3.0,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 18.1,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.0,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 21.5,
+                "lift_cm": 2.8
+              }
+            ],
+            "t": 17.276,
+            "force": 75.0,
+            "support": "both",
+            "step_cm": 27.7,
+            "walk_cm": 38.8,
+            "pen_deg": [
+              34.9,
+              36.3
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.9,
+              29.9
+            ],
+            "roll_range_deg": 3.4,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 26.9,
+                "lift_cm": 3.3
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.6,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": -1.8,
+                "lift_cm": 0.3
+              }
+            ],
+            "t": 28.014,
+            "force": -85.0,
+            "support": "both",
+            "step_cm": 32.0,
+            "walk_cm": 43.1,
+            "pen_deg": [
+              39.7,
+              39.4
+            ]
+          },
+          {
+            "shaft_deg": [
+              31.0,
+              32.3
+            ],
+            "roll_range_deg": 2.7,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "L",
+                "shift_cm": 17.1,
+                "lift_cm": 1.9
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 14.8,
+                "lift_cm": 1.4
+              }
+            ],
+            "t": 39.474,
+            "force": 100.0,
+            "support": "both",
+            "step_cm": 22.0,
+            "walk_cm": 16.4,
+            "pen_deg": [
+              38.4,
+              40.1
+            ]
+          },
+          {
+            "shaft_deg": [
+              33.0,
+              33.7
+            ],
+            "roll_range_deg": 3.5,
+            "landings": [
+              {
+                "side": "R",
+                "shift_cm": -0.1,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": -0.1,
+                "lift_cm": 0.4
+              },
+              {
+                "side": "R",
+                "shift_cm": 11.3,
+                "lift_cm": 2.5
+              }
+            ],
+            "t": 47.612,
+            "force": -115.0,
+            "support": "both",
+            "step_cm": 14.5,
+            "walk_cm": 8.9,
+            "pen_deg": [
+              42.4,
+              40.0
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z727",
+        "seconds": 55.0,
+        "min_height": 0.911,
+        "forward": 1.974,
+        "opposed": [
+          100.0,
+          100.0
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              28.5,
+              29.0
+            ],
+            "roll_range_deg": 2.3,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 15.4,
+                "lift_cm": 2.3
+              },
+              {
+                "side": "R",
+                "shift_cm": -0.1,
+                "lift_cm": 1.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 7.3,
+                "lift_cm": 1.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 8.0,
+                "lift_cm": 0.2
+              }
+            ],
+            "t": 6.49,
+            "force": -60.0,
+            "support": "both",
+            "step_cm": 23.2,
+            "walk_cm": 39.2,
+            "pen_deg": [
+              37.5,
+              35.7
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.4,
+              35.7
+            ],
+            "roll_range_deg": 4.6,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 1.3,
+                "lift_cm": 4.4
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.6,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 12.8,
+                "lift_cm": 2.8
+              },
+              {
+                "side": "R",
+                "shift_cm": 1.0,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 17.184,
+            "force": 75.0,
+            "support": "R",
+            "step_cm": 18.9,
+            "walk_cm": 37.6,
+            "pen_deg": [
+              35.1,
+              38.3
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.6,
+              28.1
+            ],
+            "roll_range_deg": 3.0,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 28.8,
+                "lift_cm": 2.7
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.0,
+                "lift_cm": 4.4
+              },
+              {
+                "side": "R",
+                "shift_cm": -4.1,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 27.332,
+            "force": -85.0,
+            "support": "L",
+            "step_cm": 32.6,
+            "walk_cm": 45.1,
+            "pen_deg": [
+              41.3,
+              37.3
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.4,
+              33.3
+            ],
+            "roll_range_deg": 3.8,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "L",
+                "shift_cm": 9.0,
+                "lift_cm": 2.5
+              }
+            ],
+            "t": 39.16,
+            "force": 100.0,
+            "support": "both",
+            "step_cm": 12.1,
+            "walk_cm": 12.2,
+            "pen_deg": [
+              38.5,
+              39.7
+            ]
+          },
+          {
+            "shaft_deg": [
+              28.3,
+              34.2
+            ],
+            "roll_range_deg": 4.8,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 14.5,
+                "lift_cm": 1.9
+              },
+              {
+                "side": "R",
+                "shift_cm": 9.7,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 8.2,
+                "lift_cm": 1.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 1.8,
+                "lift_cm": 0.4
+              },
+              {
+                "side": "R",
+                "shift_cm": -2.8,
+                "lift_cm": 0.3
+              }
+            ],
+            "t": 46.534,
+            "force": -115.0,
+            "support": "L",
+            "step_cm": 24.3,
+            "walk_cm": 15.4,
+            "pen_deg": [
+              40.6,
+              37.9
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z905",
+        "seconds": 55.0,
+        "min_height": 0.899,
+        "forward": 1.966,
+        "opposed": [
+          99.94,
+          100.0
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              32.8,
+              30.6
+            ],
+            "roll_range_deg": 9.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 14.2,
+                "lift_cm": 4.3
+              }
+            ],
+            "t": 3.728,
+            "force": -109.0,
+            "support": "R",
+            "step_cm": 22.3,
+            "walk_cm": 50.9,
+            "pen_deg": [
+              37.0,
+              30.9
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.7,
+              33.1
+            ],
+            "roll_range_deg": 5.4,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 29.1,
+                "lift_cm": 2.5
+              },
+              {
+                "side": "R",
+                "shift_cm": -4.0,
+                "lift_cm": 0.5
+              },
+              {
+                "side": "R",
+                "shift_cm": -1.1,
+                "lift_cm": 0.2
+              }
+            ],
+            "t": 16.034,
+            "force": -110.0,
+            "support": "both",
+            "step_cm": 39.2,
+            "walk_cm": 31.0,
+            "pen_deg": [
+              36.7,
+              35.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              33.1,
+              33.1
+            ],
+            "roll_range_deg": 3.8,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 27.3,
+                "lift_cm": 4.1
+              },
+              {
+                "side": "L",
+                "shift_cm": 1.5,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.8,
+                "lift_cm": 0.2
+              }
+            ],
+            "t": 26.31,
+            "force": -97.7,
+            "support": "R",
+            "step_cm": 35.4,
+            "walk_cm": 21.9,
+            "pen_deg": [
+              38.5,
+              38.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.4,
+              28.8
+            ],
+            "roll_range_deg": 2.0,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 29.7,
+                "lift_cm": 2.8
+              },
+              {
+                "side": "R",
+                "shift_cm": -0.9,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 35.324,
+            "force": -66.4,
+            "support": "both",
+            "step_cm": 33.1,
+            "walk_cm": 60.4,
+            "pen_deg": [
+              36.2,
+              41.4
+            ]
+          },
+          {
+            "shaft_deg": [
+              35.0,
+              29.8
+            ],
+            "roll_range_deg": 3.5,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 20.9,
+                "lift_cm": 2.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 17.8,
+                "lift_cm": 1.9
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.1,
+                "lift_cm": 0.2
+              }
+            ],
+            "t": 48.672,
+            "force": -86.3,
+            "support": "both",
+            "step_cm": 25.1,
+            "walk_cm": 3.1,
+            "pen_deg": [
+              39.8,
+              37.9
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z924",
+        "seconds": 55.0,
+        "min_height": 0.916,
+        "forward": 1.941,
+        "opposed": [
+          99.95,
+          99.78
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              32.8,
+              33.6
+            ],
+            "roll_range_deg": 2.2,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 15.8,
+                "lift_cm": 2.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 10.3,
+                "lift_cm": 1.1
+              }
+            ],
+            "t": 6.102,
+            "force": -62.8,
+            "support": "both",
+            "step_cm": 23.0,
+            "walk_cm": 36.7,
+            "pen_deg": [
+              36.7,
+              37.8
+            ]
+          },
+          {
+            "shaft_deg": [
+              33.9,
+              33.9
+            ],
+            "roll_range_deg": 5.2,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 29.4,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.1,
+                "lift_cm": 0.4
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.1,
+                "lift_cm": 0.3
+              }
+            ],
+            "t": 17.224,
+            "force": -107.7,
+            "support": "both",
+            "step_cm": 39.5,
+            "walk_cm": 30.2,
+            "pen_deg": [
+              36.3,
+              35.4
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.6,
+              28.4
+            ],
+            "roll_range_deg": 3.3,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -0.0,
+                "lift_cm": 1.0
+              },
+              {
+                "side": "L",
+                "shift_cm": 18.9,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.2,
+                "lift_cm": 0.4
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.7,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 14.9,
+                "lift_cm": 2.7
+              }
+            ],
+            "t": 27.046,
+            "force": 103.6,
+            "support": "both",
+            "step_cm": 20.3,
+            "walk_cm": 15.7,
+            "pen_deg": [
+              35.6,
+              37.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.9,
+              30.5
+            ],
+            "roll_range_deg": 5.0,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 11.1,
+                "lift_cm": 3.9
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.7,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.2,
+                "lift_cm": 0.0
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.6,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 15.2,
+                "lift_cm": 1.7
+              }
+            ],
+            "t": 34.884,
+            "force": 104.8,
+            "support": "R",
+            "step_cm": 24.7,
+            "walk_cm": 39.5,
+            "pen_deg": [
+              36.8,
+              41.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.3,
+              33.9
+            ],
+            "roll_range_deg": 2.3,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 20.3,
+                "lift_cm": 4.1
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.5,
+                "lift_cm": 0.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.9,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 15.2,
+                "lift_cm": 1.9
+              }
+            ],
+            "t": 45.964,
+            "force": -63.2,
+            "support": "R",
+            "step_cm": 24.5,
+            "walk_cm": 24.7,
+            "pen_deg": [
+              40.6,
+              37.8
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z1042",
+        "seconds": 17.518,
+        "min_height": 0.611,
+        "forward": 0.597,
+        "opposed": [
+          98.17,
+          98.57
+        ],
+        "palm": 1.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              29.0,
+              28.9
+            ],
+            "roll_range_deg": 4.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 0.0,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "L",
+                "shift_cm": 12.0,
+                "lift_cm": 2.5
+              }
+            ],
+            "t": 5.41,
+            "force": 108.9,
+            "support": "both",
+            "step_cm": 16.4,
+            "walk_cm": 39.2,
+            "pen_deg": [
+              37.1,
+              35.3
+            ]
+          },
+          {
+            "shaft_deg": [
+              57.8,
+              69.5
+            ],
+            "roll_range_deg": 56.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 1.2,
+                "lift_cm": 0.4
+              },
+              {
+                "side": "L",
+                "shift_cm": -15.4,
+                "lift_cm": 11.7
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.7,
+                "lift_cm": 0.6
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.3,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": -48.3,
+                "lift_cm": 24.1
+              }
+            ],
+            "t": 16.014,
+            "force": 109.3,
+            "support": "both",
+            "step_cm": 18.8,
+            "walk_cm": -0.8,
+            "pen_deg": [
+              51.9,
+              20.9
+            ]
+          }
+        ]
+      },
+      "all_ok": false,
+      "body": false,
+      "fingers": false,
+      "steps": 1,
+      "walks": 1
+    },
+    {
+      "data": {
+        "name": "z1051",
+        "seconds": 55.0,
+        "min_height": 0.933,
+        "forward": 2.179,
+        "opposed": [
+          99.91,
+          100.0
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              29.7,
+              28.8
+            ],
+            "roll_range_deg": 4.6,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 13.2,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "L",
+                "shift_cm": 10.7,
+                "lift_cm": 0.8
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.3,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.3,
+                "lift_cm": 0.0
+              },
+              {
+                "side": "R",
+                "shift_cm": -2.9,
+                "lift_cm": 0.4
+              },
+              {
+                "side": "R",
+                "shift_cm": 20.9,
+                "lift_cm": 2.7
+              }
+            ],
+            "t": 5.672,
+            "force": 76.7,
+            "support": "R",
+            "step_cm": 26.2,
+            "walk_cm": 43.8,
+            "pen_deg": [
+              37.5,
+              35.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.1,
+              32.1
+            ],
+            "roll_range_deg": 2.1,
+            "landings": [
+              {
+                "side": "R",
+                "shift_cm": 18.8,
+                "lift_cm": 1.3
+              }
+            ],
+            "t": 17.248,
+            "force": -61.6,
+            "support": "both",
+            "step_cm": 30.3,
+            "walk_cm": 39.5,
+            "pen_deg": [
+              35.2,
+              35.9
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.2,
+              27.3
+            ],
+            "roll_range_deg": 5.7,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 0.0,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.2,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 9.8,
+                "lift_cm": 1.3
+              }
+            ],
+            "t": 27.508,
+            "force": 103.2,
+            "support": "R",
+            "step_cm": 20.2,
+            "walk_cm": 15.6,
+            "pen_deg": [
+              37.1,
+              37.3
+            ]
+          },
+          {
+            "shaft_deg": [
+              33.2,
+              29.4
+            ],
+            "roll_range_deg": 2.2,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 16.9,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.3,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 21.8,
+                "lift_cm": 3.0
+              }
+            ],
+            "t": 34.362,
+            "force": 62.5,
+            "support": "both",
+            "step_cm": 23.9,
+            "walk_cm": 51.1,
+            "pen_deg": [
+              37.5,
+              39.6
+            ]
+          },
+          {
+            "shaft_deg": [
+              27.4,
+              33.9
+            ],
+            "roll_range_deg": 4.6,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 1.3,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "L",
+                "shift_cm": 19.7,
+                "lift_cm": 1.7
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.0,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 1.8,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 21.6,
+                "lift_cm": 1.4
+              }
+            ],
+            "t": 46.754,
+            "force": 89.2,
+            "support": "L",
+            "step_cm": 25.1,
+            "walk_cm": 21.3,
+            "pen_deg": [
+              40.2,
+              38.3
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z1052",
+        "seconds": 25.97,
+        "min_height": 0.583,
+        "forward": 0.94,
+        "opposed": [
+          98.77,
+          99.08
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              29.2,
+              29.3
+            ],
+            "roll_range_deg": 3.1,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 28.4,
+                "lift_cm": 2.2
+              },
+              {
+                "side": "R",
+                "shift_cm": -3.5,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 5.3,
+            "force": -83.2,
+            "support": "both",
+            "step_cm": 32.2,
+            "walk_cm": 18.0,
+            "pen_deg": [
+              37.0,
+              34.4
+            ]
+          },
+          {
+            "shaft_deg": [
+              31.4,
+              31.3
+            ],
+            "roll_range_deg": 2.4,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -0.6,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 9.5,
+                "lift_cm": 1.3
+              }
+            ],
+            "t": 13.31,
+            "force": -72.2,
+            "support": "R",
+            "step_cm": 13.0,
+            "walk_cm": 39.3,
+            "pen_deg": [
+              36.2,
+              36.3
+            ]
+          },
+          {
+            "shaft_deg": [
+              175.0,
+              80.9
+            ],
+            "roll_range_deg": 35.8,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 1.5,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "L",
+                "shift_cm": 11.4,
+                "lift_cm": 0.5
+              },
+              {
+                "side": "L",
+                "shift_cm": 4.1,
+                "lift_cm": 0.9
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.8,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "L",
+                "shift_cm": -3.4,
+                "lift_cm": 2.1
+              },
+              {
+                "side": "L",
+                "shift_cm": -3.9,
+                "lift_cm": 0.5
+              },
+              {
+                "side": "R",
+                "shift_cm": -2.8,
+                "lift_cm": 1.0
+              },
+              {
+                "side": "R",
+                "shift_cm": -0.8,
+                "lift_cm": 25.3
+              }
+            ],
+            "t": 24.416,
+            "force": 109.0,
+            "support": "R",
+            "step_cm": 13.8,
+            "walk_cm": 0.9,
+            "pen_deg": [
+              220.1,
+              46.0
+            ]
+          }
+        ]
+      },
+      "all_ok": false,
+      "body": false,
+      "fingers": true,
+      "steps": 3,
+      "walks": 2
+    },
+    {
+      "data": {
+        "name": "z1071",
+        "seconds": 48.682,
+        "min_height": 0.865,
+        "forward": 1.096,
+        "opposed": [
+          99.92,
+          99.73
+        ],
+        "palm": 1.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              31.0,
+              33.2
+            ],
+            "roll_range_deg": 4.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 1.0
+              },
+              {
+                "side": "L",
+                "shift_cm": 19.2,
+                "lift_cm": 2.6
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.5,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": -0.4,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 15.1,
+                "lift_cm": 1.9
+              }
+            ],
+            "t": 3.524,
+            "force": 105.7,
+            "support": "both",
+            "step_cm": 24.5,
+            "walk_cm": 45.2,
+            "pen_deg": [
+              33.5,
+              36.4
+            ]
+          },
+          {
+            "shaft_deg": [
+              29.6,
+              31.3
+            ],
+            "roll_range_deg": 2.0,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 21.2,
+                "lift_cm": 2.8
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.2,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 17.4,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.4,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 14.972,
+            "force": -62.0,
+            "support": "both",
+            "step_cm": 23.7,
+            "walk_cm": 45.3,
+            "pen_deg": [
+              39.0,
+              34.3
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.0,
+              27.3
+            ],
+            "roll_range_deg": 2.3,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 0.6
+              },
+              {
+                "side": "L",
+                "shift_cm": 18.8,
+                "lift_cm": 1.8
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 0.4
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.3,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 15.4,
+                "lift_cm": 2.3
+              }
+            ],
+            "t": 27.358,
+            "force": 75.9,
+            "support": "both",
+            "step_cm": 19.9,
+            "walk_cm": 23.7,
+            "pen_deg": [
+              39.6,
+              36.8
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.6,
+              34.4
+            ],
+            "roll_range_deg": 3.0,
+            "landings": [
+              {
+                "side": "R",
+                "shift_cm": -0.0,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 7.5,
+                "lift_cm": 2.3
+              }
+            ],
+            "t": 35.958,
+            "force": -92.6,
+            "support": "both",
+            "step_cm": 10.5,
+            "walk_cm": 38.5,
+            "pen_deg": [
+              39.2,
+              39.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              42.7,
+              41.0
+            ],
+            "roll_range_deg": 38.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 26.7,
+                "lift_cm": 4.0
+              },
+              {
+                "side": "R",
+                "shift_cm": 3.9,
+                "lift_cm": 2.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.6,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 46.63,
+            "force": -93.4,
+            "support": "R",
+            "step_cm": 36.3,
+            "walk_cm": 1.3,
+            "pen_deg": [
+              64.9,
+              39.6
+            ]
+          }
+        ]
+      },
+      "all_ok": false,
+      "body": false,
+      "fingers": false,
+      "steps": 5,
+      "walks": 4
+    },
+    {
+      "data": {
+        "name": "z1072",
+        "seconds": 55.0,
+        "min_height": 0.917,
+        "forward": 1.929,
+        "opposed": [
+          99.93,
+          99.97
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              31.6,
+              33.5
+            ],
+            "roll_range_deg": 7.5,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "L",
+                "shift_cm": 21.3,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.0,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 17.9,
+                "lift_cm": 1.5
+              }
+            ],
+            "t": 3.896,
+            "force": 104.0,
+            "support": "R",
+            "step_cm": 33.4,
+            "walk_cm": 43.6,
+            "pen_deg": [
+              34.8,
+              36.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              29.9,
+              30.0
+            ],
+            "roll_range_deg": 4.7,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -2.1,
+                "lift_cm": 0.4
+              },
+              {
+                "side": "L",
+                "shift_cm": -1.4,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 29.5,
+                "lift_cm": 2.7
+              }
+            ],
+            "t": 15.81,
+            "force": 106.5,
+            "support": "both",
+            "step_cm": 33.1,
+            "walk_cm": 44.7,
+            "pen_deg": [
+              37.7,
+              35.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              31.9,
+              28.7
+            ],
+            "roll_range_deg": 3.4,
+            "landings": [
+              {
+                "side": "R",
+                "shift_cm": 14.6,
+                "lift_cm": 1.8
+              }
+            ],
+            "t": 27.196,
+            "force": -106.0,
+            "support": "both",
+            "step_cm": 18.9,
+            "walk_cm": 22.7,
+            "pen_deg": [
+              40.2,
+              37.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              31.9,
+              33.6
+            ],
+            "roll_range_deg": 3.7,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 27.1,
+                "lift_cm": 1.8
+              },
+              {
+                "side": "R",
+                "shift_cm": -2.7,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": -1.0,
+                "lift_cm": 0.1
+              }
+            ],
+            "t": 36.196,
+            "force": -80.8,
+            "support": "both",
+            "step_cm": 34.9,
+            "walk_cm": 44.7,
+            "pen_deg": [
+              39.9,
+              38.2
+            ]
+          },
+          {
+            "shaft_deg": [
+              29.4,
+              34.2
+            ],
+            "roll_range_deg": 2.5,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 1.1,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "L",
+                "shift_cm": 17.9,
+                "lift_cm": 1.4
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 15.1,
+                "lift_cm": 2.4
+              }
+            ],
+            "t": 47.496,
+            "force": 86.7,
+            "support": "both",
+            "step_cm": 20.0,
+            "walk_cm": 12.4,
+            "pen_deg": [
+              38.0,
+              41.1
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z1073",
+        "seconds": 55.0,
+        "min_height": 0.937,
+        "forward": 1.801,
+        "opposed": [
+          99.92,
+          100.0
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              32.8,
+              33.7
+            ],
+            "roll_range_deg": 2.5,
+            "landings": [
+              {
+                "side": "R",
+                "shift_cm": 7.7,
+                "lift_cm": 2.4
+              }
+            ],
+            "t": 6.33,
+            "force": -92.6,
+            "support": "both",
+            "step_cm": 10.4,
+            "walk_cm": 14.6,
+            "pen_deg": [
+              37.1,
+              36.1
+            ]
+          },
+          {
+            "shaft_deg": [
+              29.6,
+              29.8
+            ],
+            "roll_range_deg": 3.6,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 18.4,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.2,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 21.8,
+                "lift_cm": 2.9
+              }
+            ],
+            "t": 14.648,
+            "force": 65.0,
+            "support": "both",
+            "step_cm": 29.6,
+            "walk_cm": 38.4,
+            "pen_deg": [
+              35.3,
+              35.9
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.4,
+              35.2
+            ],
+            "roll_range_deg": 2.2,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "L",
+                "shift_cm": 6.0,
+                "lift_cm": 1.4
+              },
+              {
+                "side": "L",
+                "shift_cm": 1.0,
+                "lift_cm": 0.4
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.1,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 15.3,
+                "lift_cm": 2.7
+              }
+            ],
+            "t": 25.124,
+            "force": 71.0,
+            "support": "both",
+            "step_cm": 19.7,
+            "walk_cm": 23.8,
+            "pen_deg": [
+              38.9,
+              39.4
+            ]
+          },
+          {
+            "shaft_deg": [
+              31.7,
+              30.8
+            ],
+            "roll_range_deg": 3.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 15.8,
+                "lift_cm": 2.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 16.1,
+                "lift_cm": 1.8
+              }
+            ],
+            "t": 34.264,
+            "force": -64.6,
+            "support": "both",
+            "step_cm": 26.6,
+            "walk_cm": 38.2,
+            "pen_deg": [
+              37.8,
+              40.9
+            ]
+          },
+          {
+            "shaft_deg": [
+              34.1,
+              34.2
+            ],
+            "roll_range_deg": 4.5,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 0.0,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.2,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "L",
+                "shift_cm": -3.0,
+                "lift_cm": 0.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 29.4,
+                "lift_cm": 2.5
+              }
+            ],
+            "t": 45.804,
+            "force": 72.5,
+            "support": "R",
+            "step_cm": 36.7,
+            "walk_cm": 22.5,
+            "pen_deg": [
+              40.2,
+              37.9
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z1074",
+        "seconds": 55.0,
+        "min_height": 0.935,
+        "forward": 1.936,
+        "opposed": [
+          100.0,
+          99.87
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              31.4,
+              32.1
+            ],
+            "roll_range_deg": 2.3,
+            "landings": [
+              {
+                "side": "R",
+                "shift_cm": 7.6,
+                "lift_cm": 2.3
+              }
+            ],
+            "t": 4.308,
+            "force": -87.9,
+            "support": "both",
+            "step_cm": 10.4,
+            "walk_cm": 30.6,
+            "pen_deg": [
+              34.4,
+              35.9
+            ]
+          },
+          {
+            "shaft_deg": [
+              29.3,
+              30.6
+            ],
+            "roll_range_deg": 1.9,
+            "landings": [
+              {
+                "side": "R",
+                "shift_cm": 7.9,
+                "lift_cm": 2.5
+              }
+            ],
+            "t": 14.446,
+            "force": -72.4,
+            "support": "both",
+            "step_cm": 10.7,
+            "walk_cm": 45.7,
+            "pen_deg": [
+              36.0,
+              35.9
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.5,
+              34.3
+            ],
+            "roll_range_deg": 4.1,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -3.5,
+                "lift_cm": 1.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 30.6,
+                "lift_cm": 2.8
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.2,
+                "lift_cm": 0.2
+              }
+            ],
+            "t": 26.112,
+            "force": 88.2,
+            "support": "both",
+            "step_cm": 35.3,
+            "walk_cm": 35.5,
+            "pen_deg": [
+              38.8,
+              37.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              29.6,
+              33.9
+            ],
+            "roll_range_deg": 4.1,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -1.0,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "L",
+                "shift_cm": 14.5,
+                "lift_cm": 2.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 10.9,
+                "lift_cm": 4.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 7.1,
+                "lift_cm": 1.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 1.9,
+                "lift_cm": 0.8
+              },
+              {
+                "side": "R",
+                "shift_cm": -1.0,
+                "lift_cm": 0.5
+              }
+            ],
+            "t": 36.766,
+            "force": -90.5,
+            "support": "L",
+            "step_cm": 20.7,
+            "walk_cm": 27.2,
+            "pen_deg": [
+              39.5,
+              36.8
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.8,
+              33.8
+            ],
+            "roll_range_deg": 2.8,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 14.1,
+                "lift_cm": 2.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 11.4,
+                "lift_cm": 4.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.9,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": -0.2,
+                "lift_cm": 0.6
+              }
+            ],
+            "t": 45.764,
+            "force": -69.3,
+            "support": "L",
+            "step_cm": 20.7,
+            "walk_cm": 28.2,
+            "pen_deg": [
+              40.8,
+              37.8
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z1075",
+        "seconds": 55.0,
+        "min_height": 0.935,
+        "forward": 1.787,
+        "opposed": [
+          99.76,
+          99.97
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              32.3,
+              32.8
+            ],
+            "roll_range_deg": 2.3,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 15.9,
+                "lift_cm": 2.4
+              },
+              {
+                "side": "R",
+                "shift_cm": 8.3,
+                "lift_cm": 1.2
+              }
+            ],
+            "t": 6.242,
+            "force": -63.4,
+            "support": "both",
+            "step_cm": 22.9,
+            "walk_cm": 29.8,
+            "pen_deg": [
+              36.7,
+              36.2
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.6,
+              33.4
+            ],
+            "roll_range_deg": 3.1,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 18.7,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.0,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 22.0,
+                "lift_cm": 2.8
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.3,
+                "lift_cm": 0.3
+              }
+            ],
+            "t": 16.44,
+            "force": 78.2,
+            "support": "both",
+            "step_cm": 25.7,
+            "walk_cm": 33.2,
+            "pen_deg": [
+              35.0,
+              35.7
+            ]
+          },
+          {
+            "shaft_deg": [
+              31.9,
+              30.6
+            ],
+            "roll_range_deg": 5.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.0,
+                "lift_cm": 0.0
+              },
+              {
+                "side": "L",
+                "shift_cm": -0.0,
+                "lift_cm": 0.0
+              },
+              {
+                "side": "R",
+                "shift_cm": 9.1,
+                "lift_cm": 2.7
+              }
+            ],
+            "t": 26.926,
+            "force": 94.4,
+            "support": "both",
+            "step_cm": 20.2,
+            "walk_cm": 37.0,
+            "pen_deg": [
+              39.1,
+              37.7
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.2,
+              34.0
+            ],
+            "roll_range_deg": 3.7,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 29.3,
+                "lift_cm": 2.5
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.0,
+                "lift_cm": 4.4
+              },
+              {
+                "side": "R",
+                "shift_cm": -2.6,
+                "lift_cm": 0.5
+              }
+            ],
+            "t": 37.342,
+            "force": -100.0,
+            "support": "L",
+            "step_cm": 32.8,
+            "walk_cm": 39.7,
+            "pen_deg": [
+              40.1,
+              36.9
+            ]
+          },
+          {
+            "shaft_deg": [
+              34.5,
+              33.4
+            ],
+            "roll_range_deg": 2.0,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 15.1,
+                "lift_cm": 2.1
+              },
+              {
+                "side": "R",
+                "shift_cm": -0.0,
+                "lift_cm": 0.8
+              },
+              {
+                "side": "R",
+                "shift_cm": 15.9,
+                "lift_cm": 1.8
+              }
+            ],
+            "t": 48.228,
+            "force": -83.4,
+            "support": "both",
+            "step_cm": 23.7,
+            "walk_cm": 5.2,
+            "pen_deg": [
+              42.5,
+              40.3
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    },
+    {
+      "data": {
+        "name": "z1076",
+        "seconds": 55.0,
+        "min_height": 0.92,
+        "forward": 1.994,
+        "opposed": [
+          99.89,
+          100.0
+        ],
+        "palm": 0.0,
+        "ground": 0.0,
+        "events": [
+          {
+            "shaft_deg": [
+              27.8,
+              28.9
+            ],
+            "roll_range_deg": 3.9,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 2.0,
+                "lift_cm": 0.3
+              },
+              {
+                "side": "L",
+                "shift_cm": 0.1,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 23.3,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 11.7,
+                "lift_cm": 0.2
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.8,
+                "lift_cm": 0.3
+              }
+            ],
+            "t": 4.758,
+            "force": 100.9,
+            "support": "L",
+            "step_cm": 32.6,
+            "walk_cm": 40.3,
+            "pen_deg": [
+              33.5,
+              36.2
+            ]
+          },
+          {
+            "shaft_deg": [
+              31.8,
+              30.0
+            ],
+            "roll_range_deg": 3.3,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 15.9,
+                "lift_cm": 2.4
+              },
+              {
+                "side": "R",
+                "shift_cm": 12.0,
+                "lift_cm": 3.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 8.2,
+                "lift_cm": 1.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.7,
+                "lift_cm": 0.3
+              }
+            ],
+            "t": 15.608,
+            "force": -94.5,
+            "support": "L",
+            "step_cm": 23.7,
+            "walk_cm": 26.0,
+            "pen_deg": [
+              37.7,
+              35.4
+            ]
+          },
+          {
+            "shaft_deg": [
+              32.7,
+              34.0
+            ],
+            "roll_range_deg": 3.7,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 9.3,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "L",
+                "shift_cm": 14.9,
+                "lift_cm": 0.9
+              },
+              {
+                "side": "L",
+                "shift_cm": 9.8,
+                "lift_cm": 0.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 2.9,
+                "lift_cm": 0.3
+              }
+            ],
+            "t": 24.998,
+            "force": -107.9,
+            "support": "R",
+            "step_cm": 36.1,
+            "walk_cm": 34.7,
+            "pen_deg": [
+              40.2,
+              37.2
+            ]
+          },
+          {
+            "shaft_deg": [
+              30.6,
+              32.7
+            ],
+            "roll_range_deg": 2.5,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": 20.8,
+                "lift_cm": 2.0
+              },
+              {
+                "side": "R",
+                "shift_cm": -0.1,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 17.9,
+                "lift_cm": 2.1
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.3,
+                "lift_cm": 0.4
+              }
+            ],
+            "t": 36.08,
+            "force": -65.8,
+            "support": "L",
+            "step_cm": 22.8,
+            "walk_cm": 25.7,
+            "pen_deg": [
+              37.9,
+              38.5
+            ]
+          },
+          {
+            "shaft_deg": [
+              33.7,
+              33.5
+            ],
+            "roll_range_deg": 4.3,
+            "landings": [
+              {
+                "side": "L",
+                "shift_cm": -2.8,
+                "lift_cm": 0.9
+              },
+              {
+                "side": "R",
+                "shift_cm": 27.8,
+                "lift_cm": 4.3
+              },
+              {
+                "side": "R",
+                "shift_cm": 0.8,
+                "lift_cm": 0.3
+              }
+            ],
+            "t": 45.012,
+            "force": 96.1,
+            "support": "L",
+            "step_cm": 33.3,
+            "walk_cm": 29.5,
+            "pen_deg": [
+              40.3,
+              37.8
+            ]
+          }
+        ]
+      },
+      "all_ok": true,
+      "body": true,
+      "fingers": true,
+      "steps": 5,
+      "walks": 5
+    }
+  ]
+}

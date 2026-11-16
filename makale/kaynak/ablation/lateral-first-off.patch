@@ -1,0 +1,15 @@
+--- a/work/parmak_denge/catch.py
++++ b/work/parmak_denge/catch.py
+@@ -227,11 +227,7 @@
+             ) * setting("RESTORE", 1)
+             actual = d.xpos[[m.body(side + "_ankle_roll").id for side in "LR"]].copy()
+             initial = int(actual[1, 1] > actual[0, 1] + 0.02)
+-            self.close_stance_first = (
+-                abs(actual[1, 0] - actual[0, 0]) > 1.50 * self.restwidth
+-                and abs(actual[1, 1] - actual[0, 1]) > 0.055
+-                and np.argmax(abs(self.pending)) != initial
+-            )
++            self.close_stance_first = False
+             if self.close_stance_first:
+                 f = actual.copy()
+                 self.pending[self.o] = np.clip(

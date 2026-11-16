@@ -1,0 +1,37 @@
+% Editable supplement. Requires booktabs. Supports a two-column paper.
+\section{Event-level audit}
+\label{sec:event-audit}
+Each of the 15 frozen-controller schedules specified five lateral loads. Of 75 planned loads, 70 reached onset and 67 reached release. Three runs stopped while a force was active, leaving five later loads unobserved. All event counts below condition on exposure. The primary endpoint remains the joint, 55~s run-level outcome.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Observed load onsets by foot support and force sign. A landing may complete a swing already under way. A new swing additionally requires lift-off at or after onset. Release counts complete load windows. The sign rows partition the same 70 events as the support rows.}
+\label{tab:exposure}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Onset state & Starts & Landings & New swings & Releases\\
+\midrule
+Both feet & 42 & 41 & 41 & 41\\
+Left only & 12 & 12 & 10 & 12\\
+Right only & 16 & 16 & 13 & 14\\
+\midrule
+Positive world $x$ & 32 & 31 & 29 & 30\\
+Negative world $x$ & 38 & 38 & 35 & 37\\
+\midrule
+All observed & 70 & 69 & 64 & 67\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Landing versus initiating a step.}
+A qualifying landing shifts at least 3~cm along the force direction after at least 30~ms without ground contact and at least 5~mm of vertical excursion. All 67 complete loads had a qualifying landing. For 62 of them, a qualifying swing also began after load onset. In the other five the qualifying foot was already airborne. The median maximum signed landing distance per complete load was 19.2~cm (range 7.5--30.6). Subsequent forward travel, measured from release to the next load or the end of the run, had a median of 34.7~cm (3.1--60.4). The individual windows span different durations.
+
+\paragraph{Object motion and contact.}
+During the 67 complete loads, the median maximum shaft-axis excursion relative to the wrist was $31.4^\circ$ on the left and $32.3^\circ$ on the right. No palm contact occurred within these 67 windows. For 66 windows, each pen had opposing fingertip contact in at least 98\% of load-window samples. The exception was load~5 of seed~1075, with 97.96\% left-hand contact during the load. The primary run-level criterion uses contact aggregated over the full recording; this seed passed at that scale.
+
+\paragraph{Where evaluation stopped.}
+Seed~1042 stopped on its second load at 17.518~s, and seed~1052 stopped on its third at 25.970~s. Each crossed the 0.30~m vertical tracking-error limit. Seed~1071 stopped on its fifth load at 48.682~s, crossing the 0.65~m horizontal tracking-error limit along the fore--aft axis. At each stop the force was still active. A post-release walking distance therefore cannot be measured for those three events. The recorded run-level palm contacts occurred in 1042 and 1071.
+
+\paragraph{Sampling uncertainty.}
+Five of six newly reserved schedules passed. Under an independent, equal-probability Bernoulli model for schedules from the same generator, the two-sided 95\% exact binomial interval is 35.9--99.6\%. The small denominator limits precision. Events within a run share robot state and are unsuitable as independent replicates of full-task success. All tests used one simulated robot, terrain and lateral force application site.

@@ -1,21 +1,21 @@
-# Makalenin kaynakları
+# Building the research paper
 
-`Makale.tex` yedi sayfalık Türkçe teknik raporun düzenlenebilir LaTeX kaynağıdır. Başlık, metin, kaynakça, şekil açıklamaları ve sonuç tablosu bu dosyadadır. Rapor bağımsız bir proje çalışması olarak hazırlanmıştır.
-
-## PDF üretimi
-
-Bu klasörde, Tectonic 0.17 veya XeLaTeX kurulu bir ortamda çalıştırın. Ubuntu üzerinde Liberation Serif, Lato ve DejaVu Sans Mono yazı tipleri kullanılır. Şekiller önceden hazırlandığı için PDF derlemesi Python gerektirmez.
+`Makale.tex` is the editable English manuscript. Compile it from this directory with Tectonic 0.17 or XeLaTeX. The layouts use Liberation Serif, Liberation Sans, and Liberation Mono, which are available on Ubuntu through the Liberation fonts package. All figures are included, so the typesetting step does not require Python.
 
 ```sh
 tectonic --outdir .. Makale.tex
 ```
 
-XeLaTeX kullanılıyorsa kaynakça ve bağlantılar için iki geçiş yapın. Kaynaklar metin içinde numaralandırılmıştır.
+For XeLaTeX, compile twice to resolve the bibliography and cross-references.
 
-## Veriler ve çizimler
+## Source data and visual material
 
-- `olcumler.json` film koşusunu, beş eşlenmiş itme karşılaştırmasını ve 15 tam deneme kaydının ölçümlerini içerir. Başarısız koşular da dahildir.
-- `yuruyus.csv` filmdeki 500 Hz fizik kaydından her 25 örnekte bir alınan kuvvet ve ileri konum izidir. `kalem.csv` her iki bileğe göre 60 Hz kalem eğimini içerir.
-- `sekiller.py` bu ölçümlerden vektör PDF grafikleri ve TeX satırlarını üretir. `python3 sekiller.py` komutu için NumPy ve Matplotlib gerekir. Tablo 1 metne doğrudan dizilmiştir. Sayısal kaynak güncellenirse `sekiller/kosular.tex` satırlarını Tablo 1'e aktarın.
-- `gorseller/` klasöründe filmin gerçek Blender karelerinden kırpılmış fotoğraflar yer alır. `kareler.json` kaynak kamera, kare numarası ve oransal kırpma sınırlarını belirtir. Kare numaraları birden başlar, film zamanı (kare − 1) / 60 olarak hesaplanır.
-- `veri_hazirla.py`, tam proje arşivi açıldıktan sonra, `python3 veri_hazirla.py /proje/klasoru` ile özgün MP4'ün üretiminde kullanılan verileri ve görsel kaynakları yeniden hazırlar. NumPy ve Pillow gerekir.
+- `olcumler.json` contains the filmed run, five matched force-omission comparisons, and the 15 complete or interrupted study records.
+- `yuruyus.csv` contains the force and forward-position traces subsampled from the 500 Hz physics record at 20 Hz for display. `kalem.csv` contains 60 Hz pen-angle measurements in each wrist frame.
+- `sekiller.py` reads the data and writes the vector figure PDFs, controller schematic, and LaTeX outcome rows. Use `python3 sekiller.py` with NumPy and Matplotlib. When updating the dataset, replace Table 1's inline data lines with the generated rows from `sekiller/kosular.tex`.
+- `gorseller/` contains crops from the original Blender-rendered take. `kareler.json` records the numbers and normalized crop bounds of the underlying frames. Frame 1 corresponds to 0 s. `veri_hazirla.py` includes the exact additional crops used for the equal-aspect-ratio overview panels.
+- To regenerate the paper samples and images after restoring the full experimental workspace, run `python3 veri_hazirla.py /path/to/restored/project`. This requires NumPy and Pillow.
+- `audit/` contains the independent event-level audit, the observed event table, and the editable appendix fragment. Its README gives the command and the exposure and latency conventions.
+- `paired-traces.csv` contains five observed-minus-omitted pelvis displacement profiles in the load direction, downsampled to 50 Hz with exact release samples retained. These data generate the time-aligned force-omission plot.
+- `ablation/` contains the paired controller analysis, single-factor patch, plotting script, instructions, and all 15 paired numerical outcomes. The corresponding full-width vector figure is `sekiller/ablation.pdf`. The supplementary raw trajectories and integrity manifest are in the project archive.
+- `pipeline.tex` documents the implementation from CAD assembly to MP4 decoding. Its simulation reconstruction uses `pipeline_figures.py /path/to/restored/project` with MuJoCo 3.8, NumPy and Pillow; the other panels reuse the corresponding Blender and decoded frames. The three images are included for compilation without MuJoCo.

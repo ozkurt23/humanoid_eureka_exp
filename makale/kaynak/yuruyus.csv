@@ -1,4 +1,4 @@
-saniye,yanal_kuvvet_N,ileri_konum_m
+time_s,lateral_force_N,forward_displacement_m
 0.0000000,0.0000000,0.0000000
 0.0500000,0.0000000,0.0002515
 0.1000000,0.0000000,0.0002184

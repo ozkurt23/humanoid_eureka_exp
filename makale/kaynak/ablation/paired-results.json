@@ -1,0 +1,727 @@
+[
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        20.5,
+        27.1,
+        19.1,
+        24.6,
+        19.2
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.999,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.93,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": false,
+      "signed_qualified_landing_cm": [
+        20.5,
+        27.1,
+        19.1,
+        24.6,
+        -10.7
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.999,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 4,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.93,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 6.724,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 22203,
+    "first_logged_difference_s": 44.406,
+    "identical_entire_trace": false,
+    "seed": 714,
+    "group": "development (fixed loads)"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        22.0,
+        23.6,
+        21.0,
+        28.4,
+        18.5
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.971,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 100.0,
+      "opposed_right_percent": 99.98,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        22.0,
+        23.6,
+        21.0,
+        28.4,
+        18.5
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.971,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 100.0,
+      "opposed_right_percent": 99.98,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 6.346,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 27501,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 715,
+    "group": "development (fixed loads)"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        23.7,
+        21.5,
+        26.9,
+        17.1,
+        11.3
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.919,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.8,
+      "opposed_right_percent": 99.87,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        23.7,
+        21.5,
+        26.9,
+        17.1,
+        11.3
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.919,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.8,
+      "opposed_right_percent": 99.87,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 7.096,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 27501,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 716,
+    "group": "development (fixed loads)"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        15.4,
+        12.8,
+        28.8,
+        9.0,
+        14.5
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.974,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 100.0,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        15.4,
+        12.8,
+        28.8,
+        9.0,
+        14.5
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.974,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 100.0,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 6.486,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 27501,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 727,
+    "group": "development (fixed loads)"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        14.2,
+        29.1,
+        27.3,
+        29.7,
+        20.9
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.966,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.94,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        14.2,
+        29.1,
+        27.3,
+        29.7,
+        20.9
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.966,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.94,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 3.724,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 27501,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 905,
+    "group": "development (random loads)"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        15.8,
+        29.4,
+        18.9,
+        15.2,
+        20.3
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.941,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.95,
+      "opposed_right_percent": 99.78,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        15.8,
+        29.4,
+        18.9,
+        15.2,
+        20.3
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.941,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.95,
+      "opposed_right_percent": 99.78,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 6.098,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 27501,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 924,
+    "group": "development (random loads)"
+  },
+  {
+    "on": {
+      "joint_success": false,
+      "signed_qualified_landing_cm": [
+        12.0,
+        0.7
+      ],
+      "duration_s": 17.518,
+      "forward_m": 0.597,
+      "body": false,
+      "fingertip": false,
+      "recovering_steps": 1,
+      "forward_resumptions": 1,
+      "opposed_left_percent": 98.17,
+      "opposed_right_percent": 98.57,
+      "palm_contact": true,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": false,
+      "signed_qualified_landing_cm": [
+        12.0,
+        0.7
+      ],
+      "duration_s": 17.518,
+      "forward_m": 0.597,
+      "body": false,
+      "fingertip": false,
+      "recovering_steps": 1,
+      "forward_resumptions": 1,
+      "opposed_left_percent": 98.17,
+      "opposed_right_percent": 98.57,
+      "palm_contact": true,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 5.408,
+    "common_force_samples": 8760,
+    "identical_500hz_prefix_samples": 8760,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 1042,
+    "group": "development (random loads)"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        20.9,
+        18.8,
+        9.8,
+        21.8,
+        21.6
+      ],
+      "duration_s": 55.0,
+      "forward_m": 2.179,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.91,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        20.9,
+        18.8,
+        9.8,
+        21.8,
+        21.6
+      ],
+      "duration_s": 55.0,
+      "forward_m": 2.179,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.91,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 5.67,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 27501,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 1051,
+    "group": "development (random loads)"
+  },
+  {
+    "on": {
+      "joint_success": false,
+      "signed_qualified_landing_cm": [
+        28.4,
+        9.5,
+        11.4
+      ],
+      "duration_s": 25.97,
+      "forward_m": 0.94,
+      "body": false,
+      "fingertip": true,
+      "recovering_steps": 3,
+      "forward_resumptions": 2,
+      "opposed_left_percent": 98.77,
+      "opposed_right_percent": 99.08,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": false,
+      "signed_qualified_landing_cm": [
+        28.4,
+        9.5,
+        11.4
+      ],
+      "duration_s": 25.97,
+      "forward_m": 0.94,
+      "body": false,
+      "fingertip": true,
+      "recovering_steps": 3,
+      "forward_resumptions": 2,
+      "opposed_left_percent": 98.77,
+      "opposed_right_percent": 99.08,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 5.298,
+    "common_force_samples": 12986,
+    "identical_500hz_prefix_samples": 12986,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 1052,
+    "group": "development (random loads)"
+  },
+  {
+    "on": {
+      "joint_success": false,
+      "signed_qualified_landing_cm": [
+        19.2,
+        21.2,
+        18.8,
+        7.5,
+        26.7
+      ],
+      "duration_s": 48.682,
+      "forward_m": 1.096,
+      "body": false,
+      "fingertip": false,
+      "recovering_steps": 5,
+      "forward_resumptions": 4,
+      "opposed_left_percent": 99.92,
+      "opposed_right_percent": 99.73,
+      "palm_contact": true,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": false,
+      "signed_qualified_landing_cm": [
+        19.2,
+        21.2,
+        18.8,
+        7.5,
+        26.7
+      ],
+      "duration_s": 48.682,
+      "forward_m": 1.096,
+      "body": false,
+      "fingertip": false,
+      "recovering_steps": 5,
+      "forward_resumptions": 4,
+      "opposed_left_percent": 99.92,
+      "opposed_right_percent": 99.73,
+      "palm_contact": true,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 3.5220000000000002,
+    "common_force_samples": 24342,
+    "identical_500hz_prefix_samples": 24342,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 1071,
+    "group": "held-out schedules"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        21.3,
+        29.5,
+        14.6,
+        27.1,
+        17.9
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.929,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.93,
+      "opposed_right_percent": 99.97,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        21.3,
+        29.5,
+        17.3,
+        7.7,
+        29.3
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.965,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.93,
+      "opposed_right_percent": 99.97,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 3.892,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 9766,
+    "first_logged_difference_s": 19.532,
+    "identical_entire_trace": false,
+    "seed": 1072,
+    "group": "held-out schedules"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        7.7,
+        21.8,
+        15.3,
+        16.1,
+        29.4
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.801,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.92,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        7.7,
+        21.8,
+        15.3,
+        16.1,
+        29.4
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.823,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.92,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 6.328,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 25116,
+    "first_logged_difference_s": 50.232,
+    "identical_entire_trace": false,
+    "seed": 1073,
+    "group": "held-out schedules"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        7.6,
+        7.9,
+        30.6,
+        14.5,
+        14.1
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.936,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 100.0,
+      "opposed_right_percent": 99.87,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        7.6,
+        7.9,
+        7.3,
+        28.7,
+        14.8
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.931,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 100.0,
+      "opposed_right_percent": 99.87,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 4.304,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 13103,
+    "first_logged_difference_s": 26.206,
+    "identical_entire_trace": false,
+    "seed": 1074,
+    "group": "held-out schedules"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        15.9,
+        22.0,
+        9.1,
+        29.3,
+        15.9
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.787,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.76,
+      "opposed_right_percent": 99.97,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        15.9,
+        22.0,
+        9.1,
+        29.3,
+        15.9
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.787,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.76,
+      "opposed_right_percent": 99.97,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 6.238,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 27501,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 1075,
+    "group": "held-out schedules"
+  },
+  {
+    "on": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        23.3,
+        15.9,
+        14.9,
+        20.8,
+        27.8
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.994,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.89,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "off": {
+      "joint_success": true,
+      "signed_qualified_landing_cm": [
+        23.3,
+        15.9,
+        14.9,
+        20.8,
+        27.8
+      ],
+      "duration_s": 55.0,
+      "forward_m": 1.994,
+      "body": true,
+      "fingertip": true,
+      "recovering_steps": 5,
+      "forward_resumptions": 5,
+      "opposed_left_percent": 99.89,
+      "opposed_right_percent": 100.0,
+      "palm_contact": false,
+      "nonfoot_floor_contact": false
+    },
+    "first_push_s": 4.7540000000000004,
+    "common_force_samples": 27501,
+    "identical_500hz_prefix_samples": 27501,
+    "first_logged_difference_s": null,
+    "identical_entire_trace": true,
+    "seed": 1076,
+    "group": "held-out schedules"
+  }
+]

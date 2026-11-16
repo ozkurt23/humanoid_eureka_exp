@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the technical paper in makale/Makale.pdf when referring to this project."
+title: "Bimanual Fingertip Manipulation During Humanoid Push Recovery"
+type: software
+authors:
+  - family-names: "Özkurt"
+    given-names: "Ali"
+version: "1.0.0"
+date-released: 2026-11-17
+repository-code: "https://github.com/ozkurt23/humanoid-dual-pen-recovery"
+preferred-citation:
+  type: report
+  title: "Bimanual Fingertip Manipulation During Humanoid Push Recovery"
+  authors:
+    - family-names: "Özkurt"
+      given-names: "Ali"
+  year: 2026
+  month: 11
+  url: "https://github.com/ozkurt23/humanoid-dual-pen-recovery/blob/v1.0.0/makale/Makale.pdf"

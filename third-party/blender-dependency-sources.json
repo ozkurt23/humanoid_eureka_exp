@@ -1,0 +1,906 @@
+[
+  {
+    "name": "ZLIB",
+    "url": "https://github.com/madler/zlib/releases/download/v1.3.1/zlib-1.3.1.tar.gz",
+    "version": "1.3.1",
+    "hash": "9855b6d802d7fe5b7bd5b196a2271655",
+    "hash_type": "MD5",
+    "license": "SPDX:Zlib"
+  },
+  {
+    "name": "OPENAL",
+    "url": "https://github.com/kcat/openal-soft/releases/download/1.23.1/openal-soft-1.23.1.tar.bz2",
+    "version": "1.23.1",
+    "hash": "58a73698288d2787451b61f8f4431513",
+    "hash_type": "MD5",
+    "license": "SPDX:LGPL-2.1-or-later"
+  },
+  {
+    "name": "PNG",
+    "url": "http://prdownloads.sourceforge.net/libpng/libpng-1.6.58.tar.xz",
+    "version": "1.6.58",
+    "hash": "28eb403f51f0f7405249132cecfe82ea5c0ef97f1b32c5a65828814ae0d34775",
+    "hash_type": "SHA256",
+    "license": "SPDX:libpng-2.0"
+  },
+  {
+    "name": "JPEG",
+    "url": "https://github.com/libjpeg-turbo/libjpeg-turbo/archive/2.1.3.tar.gz",
+    "version": "2.1.3",
+    "hash": "627b980fad0573e08e4c3b80b290fc91",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "BLOSC",
+    "url": "https://github.com/Blosc/c-blosc/archive/v1.21.1.tar.gz",
+    "version": "1.21.1",
+    "hash": "134b55813b1dca57019d2a2dc1f7a923",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "PTHREADS",
+    "url": "http://prdownloads.sourceforge.net/pthreads4w/pthreads4w-code-v3.0.0.zip",
+    "version": "3.0.0",
+    "hash": "f3bf81bb395840b3446197bcf4ecd653",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "DEFLATE",
+    "url": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.18.tar.gz",
+    "version": "1.18",
+    "hash": "a29d9dd653cbe03f2d5cd83972063f9e",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "OPENEXR",
+    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/v3.3.11.tar.gz",
+    "version": "3.3.11",
+    "hash": "44b9448c981d47480e436236faad39e1",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "IMATH",
+    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/v3.1.7.tar.gz",
+    "version": "3.1.7",
+    "hash": "5cedab446ab296c080957c3037c6d097",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "FREETYPE",
+    "url": "http://prdownloads.sourceforge.net/freetype/freetype-2.13.0.tar.gz",
+    "version": "2.13.0",
+    "hash": "98bc3cf234fe88ef3cf24569251fe0a4",
+    "hash_type": "MD5",
+    "license": "SPDX:FTL"
+  },
+  {
+    "name": "EPOXY",
+    "url": "https://github.com/anholt/libepoxy/archive/refs/tags/1.5.10.tar.gz",
+    "version": "1.5.10",
+    "hash": "f0730aad115c952e77591fcc805b1dc1",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "ALEMBIC",
+    "url": "https://github.com/alembic/alembic/archive/1.8.3.tar.gz",
+    "version": "1.8.3",
+    "hash": "2cd8d6e5a3ac4a014e24a4b04f4fadf9",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "OPENSUBDIV",
+    "url": "https://github.com/PixarAnimationStudios/OpenSubdiv/archive/v3_6_0.tar.gz",
+    "version": "v3_6_0",
+    "hash": "cd03aaf8890bc0b8550eef62029cabe7",
+    "hash_type": "MD5",
+    "license": "TOST-1.0"
+  },
+  {
+    "name": "SDL",
+    "url": "https://www.libsdl.org/release/SDL2-2.28.2.tar.gz",
+    "version": "2.28.2",
+    "hash": "06ff379c406cd8318d18f0de81ee2709",
+    "hash_type": "MD5",
+    "license": "SPDX:Zlib"
+  },
+  {
+    "name": "OPENCOLLADA",
+    "url": "https://github.com/aras-p/OpenCOLLADA/archive/dfc341ab0b3b23ee307ab8660c0213e64da1eac6.tar.gz",
+    "version": "dfc341ab0b3b23ee307ab8660c0213e64da1eac6",
+    "hash": "2120c8c02aab840e81cb87e625a608f7",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "OPENCOLORIO",
+    "url": "https://github.com/AcademySoftwareFoundation/OpenColorIO/archive/v2.4.1.tar.gz",
+    "version": "2.4.1",
+    "hash": "a11368ef8f001837f29b7dd18dbd2290",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "MINIZIPNG",
+    "url": "https://github.com/zlib-ng/minizip-ng/archive/3.0.7.tar.gz",
+    "version": "3.0.7",
+    "hash": "09dcc8a9def348e1be9659e384c2cd55",
+    "hash_type": "MD5",
+    "license": "SPDX:Zlib"
+  },
+  {
+    "name": "LLVM",
+    "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/llvm-project-17.0.6.src.tar.xz",
+    "version": "17.0.6",
+    "hash": "62a09d65240a5133f001ace48269dbfc",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0 WITH LLVM-exception"
+  },
+  {
+    "name": "OPENIMAGEIO",
+    "url": "https://github.com/AcademySoftwareFoundation/OpenImageIO/archive/refs/tags/v3.0.19.1.tar.gz",
+    "version": "v3.0.19.1",
+    "hash": "c25221e9d7abe6d4201e503e20bf55b1",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "FMT",
+    "url": "https://github.com/fmtlib/fmt/archive/refs/tags/9.1.0.tar.gz",
+    "version": "9.1.0",
+    "hash": "5dea48d1fcddc3ec571ce2058e13910a0d4a6bab4cc09a809d8b1dd1c88ae6f2",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "ROBINMAP",
+    "url": "https://github.com/Tessil/robin-map/archive/refs/tags/v1.3.0.tar.gz",
+    "version": "v1.3.0",
+    "hash": "a8424ad3b0affd4c57ed26f0f3d8a29604f0e1f2ef2089f497f614b1c94c7236",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "TIFF",
+    "url": "http://download.osgeo.org/libtiff/tiff-4.7.1.tar.gz",
+    "version": "4.7.1",
+    "hash": "f1044dd3b4466cc53464210148e08146",
+    "hash_type": "MD5",
+    "license": "SPDX:libtiff"
+  },
+  {
+    "name": "OSL",
+    "url": "https://github.com/AcademySoftwareFoundation/OpenShadingLanguage/archive/b795e3e92ae1f2c5da5024b61295b0eb41486a65.tar.gz",
+    "version": "1.14.3.0-beta",
+    "hash": "dbfe1a34249959f2d66296bf04317c1c",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "MANIFOLD",
+    "url": "https://github.com/elalish/manifold/archive/refs/tags/v3.1.0.tar.gz",
+    "version": "v3.1.0",
+    "hash": "ddbc6b342d57b3a1a6c53cd60c63c867",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "PYTHON",
+    "url": "https://www.python.org/ftp/python/3.11.15/Python-3.11.15.tar.xz",
+    "version": "3.11.15",
+    "hash": "a2343c36ae515542c965b5768be4de42",
+    "hash_type": "MD5",
+    "license": "SPDX:Python-2.0"
+  },
+  {
+    "name": "TBB",
+    "url": "https://github.com/uxlfoundation/oneTBB/archive/refs/tags/v2021.13.0.tar.gz",
+    "version": "v2021.13.0",
+    "hash": "f287cd007240a838286ff13e7deaee12",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "NANOBIND",
+    "url": "https://github.com/wjakob/nanobind/archive/refs/tags/v2.1.0.tar.gz",
+    "version": "v2.1.0",
+    "hash": "363e96957741869bb16ff983c042e72f",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "OPENVDB",
+    "url": "https://github.com/AcademySoftwareFoundation/openvdb/archive/v12.0.0.tar.gz",
+    "version": "12.0.0",
+    "hash": "c5cd16784b6b42aaa956b574042f374d",
+    "hash_type": "MD5",
+    "license": "SPDX:MPL-2.0"
+  },
+  {
+    "name": "CYTHON",
+    "url": "https://github.com/cython/cython/releases/download/3.0.11-1/cython-3.0.11.tar.gz",
+    "version": "3.0.11",
+    "hash": "388b85b7c23f501320d19d991b169f5d",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "ZSTANDARD",
+    "url": "https://files.pythonhosted.org/packages/ed/f6/2ac0287b442160a89d726b17a9184a4c615bb5237db763791a7fd16d9df1/zstandard-0.23.0.tar.gz",
+    "version": "0.23.0",
+    "hash": "b2d8c62d08e7255f68f7a740bae85b3c9b8e5466baa9cbf7f57f1cde0ac6bc09",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "NUMPY",
+    "url": "https://github.com/numpy/numpy/releases/download/v1.26.4/numpy-1.26.4.tar.gz",
+    "version": "1.26.4",
+    "hash": "19550cbe7bedd96a928da9d4ad69509d",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "LAME",
+    "url": "http://downloads.sourceforge.net/project/lame/lame/3.100/lame-3.100.tar.gz",
+    "version": "3.100",
+    "hash": "83e260acbe4389b54fe08e0bdbf7cddb",
+    "hash_type": "MD5",
+    "license": "SPDX:LGPL-2.1-or-later"
+  },
+  {
+    "name": "OGG",
+    "url": "http://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.gz",
+    "version": "1.3.5",
+    "hash": "0eb4b4b9420a0f51db142ba3f9c64b333f826532dc0f48c6410ae51f4799b664",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "VORBIS",
+    "url": "http://downloads.xiph.org/releases/vorbis/libvorbis-1.3.7.tar.gz",
+    "version": "1.3.7",
+    "hash": "0e982409a9c3fc82ee06e08205b1355e5c6aa4c36bca58146ef399621b0ce5ab",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "THEORA",
+    "url": "http://downloads.xiph.org/releases/theora/libtheora-1.1.1.tar.bz2",
+    "version": "1.1.1",
+    "hash": "b6ae1ee2fa3d42ac489287d3ec34c5885730b1296f0801ae577a35193d3affbc",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "FLAC",
+    "url": "http://downloads.xiph.org/releases/flac/flac-1.4.2.tar.xz",
+    "version": "1.4.2",
+    "hash": "e322d58a1f48d23d9dd38f432672865f6f79e73a6f9cc5a5f57fcaa83eb5a8e4",
+    "hash_type": "SHA256",
+    "license": "SPDX:GPL-2.0-or-later"
+  },
+  {
+    "name": "VPX",
+    "url": "https://github.com/webmproject/libvpx/archive/v1.14.0/libvpx-v1.14.0.tar.gz",
+    "version": "1.14.0",
+    "hash": "5f21d2db27071c8a46f1725928a10227ae45c5cd1cad3727e4aafbe476e321fa",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "OPUS",
+    "url": "https://archive.mozilla.org/pub/opus/opus-1.3.1.tar.gz",
+    "version": "1.3.1",
+    "hash": "65b58e1e25b2a114157014736a3d9dfeaad8d41be1c8179866f144a2fb44ff9d",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "X264",
+    "url": "https://code.videolan.org/videolan/x264/-/archive/35fe20d1ba49918ec739a5b068c208ca82f977f7/x264-35fe20d1ba49918ec739a5b068c208ca82f977f7.tar.gz",
+    "version": "35fe20d1ba49918ec739a5b068c208ca82f977f7",
+    "hash": "bb4f7da03936b5a030ed5827133b58eb3f701d7e5dce32cca4ba6df93797d42e",
+    "hash_type": "SHA256",
+    "license": "SPDX:GPL-2.0-or-later"
+  },
+  {
+    "name": "X265",
+    "url": "https://bitbucket.org/multicoreware/x265_git/get/3cf6c1e53037eb9e198860365712e1bafb22f7c6.tar.gz",
+    "version": "3cf6c1e53037eb9e198860365712e1bafb22f7c6",
+    "hash": "40d12016192cdc740132cb00dd6cc80ead094ff91a1a897181256def2011342e",
+    "hash_type": "SHA256",
+    "license": "SPDX:GPL-2.0-or-later"
+  },
+  {
+    "name": "OPENJPEG",
+    "url": "https://github.com/uclouvain/openjpeg/archive/v2.5.4.tar.gz",
+    "version": "2.5.4",
+    "hash": "a695fbe19c0165f295a8531b1e4e855cd94d0875d2f88ec4b61080677e27188a",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSD-2-Clause"
+  },
+  {
+    "name": "FFMPEG",
+    "url": "http://ffmpeg.org/releases/ffmpeg-7.1.4.tar.bz2",
+    "version": "7.1.4",
+    "hash": "de02003e8a7f7b08179ddf4a1fdc2599570ca02725fec9a1e465374fd4e514aa",
+    "hash_type": "SHA256",
+    "license": "SPDX:LGPL-2.1-or-later"
+  },
+  {
+    "name": "FFTW",
+    "url": "http://www.fftw.org/fftw-3.3.10.tar.gz",
+    "version": "3.3.10",
+    "hash": "8ccbf6a5ea78a16dbc3e1306e234cc5c",
+    "hash_type": "MD5",
+    "license": "SPDX:GPL-2.0-or-later"
+  },
+  {
+    "name": "ICONV",
+    "url": "http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz",
+    "version": "1.16",
+    "hash": "7d2a800b952942bb2880efb00cfd524c",
+    "hash_type": "MD5",
+    "license": "SPDX:LGPL-2.1-or-later"
+  },
+  {
+    "name": "SNDFILE",
+    "url": "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz",
+    "version": "1.2.2",
+    "hash": "04e2e6f726da7c5dc87f8cf72f250d04",
+    "hash_type": "MD5",
+    "license": "SPDX:LGPL-2.1-or-later"
+  },
+  {
+    "name": "WEBP",
+    "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.2.tar.gz",
+    "version": "1.3.2",
+    "hash": "34869086761c0e2da6361035f7b64771",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "SPNAV",
+    "url": "https://github.com/FreeSpacenav/libspnav/releases/download/v1.1/libspnav-1.1.tar.gz",
+    "version": "1.1",
+    "hash": "7c0032034672dfba3c4bb9b49a440e70",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "JEMALLOC",
+    "url": "https://github.com/jemalloc/jemalloc/releases/download/5.2.1/jemalloc-5.2.1.tar.bz2",
+    "version": "5.2.1",
+    "hash": "3d41fbf006e6ebffd489bdb304d009ae",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-2-Clause"
+  },
+  {
+    "name": "XML2",
+    "url": "https://download.gnome.org/sources/libxml2/2.13/libxml2-2.13.9.tar.xz",
+    "version": "2.13.9",
+    "hash": "ad95ba044a372e2f4c886cbac679e798",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "YAMLCPP",
+    "url": "https://codeload.github.com/jbeder/yaml-cpp/tar.gz/yaml-cpp-0.7.0",
+    "version": "0.7.0",
+    "hash": "74d646a3cc1b5d519829441db96744f0",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "PYSTRING",
+    "url": "https://codeload.github.com/imageworks/pystring/tar.gz/refs/tags/v1.1.3",
+    "version": "v1.1.3",
+    "hash": "f2c68786b359f5e4e62bed53bc4fb86d",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "EXPAT",
+    "url": "https://github.com/libexpat/libexpat/archive/R_2_6_4.tar.gz",
+    "version": "2_6_4",
+    "hash": "f2f8d61e2bd71d1118e1258ed9f4c0b7",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "PUGIXML",
+    "url": "https://github.com/zeux/pugixml/archive/v1.10.tar.gz",
+    "version": "1.10",
+    "hash": "0c208b0664c7fb822bf1b49ad035e8fd",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "FLEXBISON",
+    "url": "http://prdownloads.sourceforge.net/winflexbison/win_flex_bison-2.5.24.zip",
+    "version": "2.5.24",
+    "hash": "6b549d43e34ece0e8ed05af92daa31c4",
+    "hash_type": "MD5",
+    "license": null
+  },
+  {
+    "name": "FLEX",
+    "url": "https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz",
+    "version": "2.6.4",
+    "hash": "2882e3179748cc9f9c23ec593d6adc8d",
+    "hash_type": "MD5",
+    "license": null
+  },
+  {
+    "name": "BZIP2",
+    "url": "http://http.debian.net/debian/pool/main/b/bzip2/bzip2_1.0.8.orig.tar.gz",
+    "version": "1.0.8",
+    "hash": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+    "hash_type": "SHA256",
+    "license": "SPDX:bzip2-1.0.6"
+  },
+  {
+    "name": "FFI",
+    "url": "https://github.com/libffi/libffi/releases/download/v3.4.4/libffi-3.4.4.tar.gz",
+    "version": "3.4.4",
+    "hash": "d66c56ad259a82cf2a9dfc408b32bf5da52371500b84745f7fb8b645712df676",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "LZMA",
+    "url": "https://tukaani.org/xz/xz-5.2.5.tar.bz2",
+    "version": "5.2.5",
+    "hash": "5117f930900b341493827d63aa910ff5e011e0b994197c3b71c08a20228a42df",
+    "hash_type": "SHA256",
+    "license": "SPDX:GPL-3.0-or-later"
+  },
+  {
+    "name": "SSL",
+    "url": "https://www.openssl.org/source/openssl-3.1.8.tar.gz",
+    "version": "3.1.8",
+    "hash": "d319da6aecde3aa6f426b44bbf997406d95275c5c59ab6f6ef53caaa079f456f",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "SQLITE",
+    "url": "https://www.sqlite.org/2024/sqlite-autoconf-3450100.tar.gz",
+    "version": "3.45.1",
+    "hash": "650305e234add12fc1e6bef0b365d86a087b3d38",
+    "hash_type": "SHA1",
+    "license": "Public Domain"
+  },
+  {
+    "name": "EMBREE",
+    "url": "https://github.com/RenderKit/embree/archive/v4.4.0.zip",
+    "version": "4.4.0",
+    "hash": "56e5f414b9ae441b366be79867b8fb07",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "USD",
+    "url": "https://github.com/PixarAnimationStudios/OpenUSD/archive/v25.02.tar.gz",
+    "version": "25.02",
+    "hash": "76ee61270e67002ddb2fc76dda6a498d",
+    "hash_type": "MD5",
+    "license": "TOST-1.0"
+  },
+  {
+    "name": "MATERIALX",
+    "url": "https://github.com/AcademySoftwareFoundation/MaterialX/archive/refs/tags/v1.39.2.tar.gz",
+    "version": "1.39.2",
+    "hash": "e3e413755f525aec96c60af631753044",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "OIDN",
+    "url": "https://github.com/RenderKit/oidn/releases/download/v2.3.3/oidn-2.3.3.src.tar.gz",
+    "version": "2.3.3",
+    "hash": "f7756731235b51dfb788787e2f7c9ee0",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "LIBGLU",
+    "url": "https://archive.mesa3d.org/glu/glu-9.0.1.tar.xz",
+    "version": "9.0.1",
+    "hash": "151aef599b8259efe9acd599c96ea2a3",
+    "hash_type": "MD5",
+    "license": "SPDX:SGI-B-2.0"
+  },
+  {
+    "name": "MESA",
+    "url": "https://archive.mesa3d.org/mesa-23.3.0.tar.xz",
+    "version": "23.3.0",
+    "hash": "50f729dd60ed6335b989095baad81ef5edf7cfdd4b4b48b9b955917cb07d69c5",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "NASM",
+    "url": "https://github.com/netwide-assembler/nasm/archive/nasm-2.15.02.tar.gz",
+    "version": "2.15.02",
+    "hash": "aded8b796c996a486a56e0515c83e414116decc3b184d88043480b32eb0a8589",
+    "hash_type": "SHA256",
+    "license": null
+  },
+  {
+    "name": "XR_OPENXR_SDK",
+    "url": "https://github.com/KhronosGroup/OpenXR-SDK/archive/release-1.0.22.tar.gz",
+    "version": "1.0.22",
+    "hash": "a2623ebab3d0b340bc16311b14f02075",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "WL_PROTOCOLS",
+    "url": "https://gitlab.freedesktop.org/wayland/wayland-protocols/-/releases/1.44/downloads/wayland-protocols-1.44.tar.xz",
+    "version": "1.44",
+    "hash": "bbf053c2d62cf11e253cf2cc151c2df0",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "WAYLAND",
+    "url": "https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.1/downloads/wayland-1.23.1.tar.xz",
+    "version": "1.23.1",
+    "hash": "5d27c7d3658fa90f40111b47cdb4a8fb",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "WAYLAND_LIBDECOR",
+    "url": "https://gitlab.freedesktop.org/libdecor/libdecor/-/releases/0.2.2/downloads/libdecor-0.2.2.tar.xz",
+    "version": "0.2.2",
+    "hash": "5b7f4a10a9335b62101bccc220e2d13a",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "WAYLAND_WESTON",
+    "url": "https://gitlab.freedesktop.org/wayland/weston/-/releases/14.0.2/downloads/weston-14.0.2.tar.xz",
+    "version": "14.0.2",
+    "hash": "4575a052e2ff3ea7819cfbf33868f8f5",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "ISPC",
+    "url": "https://github.com/ispc/ispc/archive/v1.21.1.tar.gz",
+    "version": "v1.21.1",
+    "hash": "edd16b016aabc07819d14fd86a1fb5d0",
+    "hash_type": "MD5",
+    "license": null
+  },
+  {
+    "name": "GMP",
+    "url": "https://gmplib.org/download/gmp/gmp-6.3.0.tar.xz",
+    "version": "6.3.0",
+    "hash": "956dc04e864001a9c22429f761f2c283",
+    "hash_type": "MD5",
+    "license": "SPDX:GPL-2.0-or-later"
+  },
+  {
+    "name": "POTRACE",
+    "url": "http://potrace.sourceforge.net/download/1.16/potrace-1.16.tar.gz",
+    "version": "1.16",
+    "hash": "5f0bd87ddd9a620b0c4e65652ef93d69",
+    "hash_type": "MD5",
+    "license": "SPDX:GPL-2.0-or-later"
+  },
+  {
+    "name": "HARU",
+    "url": "https://github.com/libharu/libharu/archive/RELEASE_2_3_0.tar.gz",
+    "version": "2_3_0",
+    "hash": "4f916aa49c3069b3a10850013c507460",
+    "hash_type": "MD5",
+    "license": "SPDX:Zlib"
+  },
+  {
+    "name": "ZSTD",
+    "url": "https://github.com/facebook/zstd/releases/download/v1.5.6/zstd-1.5.6.tar.gz",
+    "version": "1.5.6",
+    "hash": "8c29e06cf42aacc1eafc4077ae2ec6c6fcb96a626157e0593d5e82a34fd403c1",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSD-3-Clause"
+  },
+  {
+    "name": "SSE2NEON",
+    "url": "https://github.com/DLTcollab/sse2neon/archive/227cc413fb2d50b2a10073087be96b59d5364aea.tar.gz",
+    "version": "227cc413fb2d50b2a10073087be96b59d5364aea",
+    "hash": "3427a495743bb6fd1b5f9f806b80f57d67b1ac7ccf39a5f44aedd487fd7e6da1",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "BROTLI",
+    "url": "https://github.com/google/brotli/archive/refs/tags/v1.0.9.tar.gz",
+    "version": "1.0.9",
+    "hash": "f9e8d81d0405ba66d181529af42a3354f838c939095ff99930da6aa9cdf6fe46",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "OPENPGL",
+    "url": "https://github.com/OpenPathGuidingLibrary/openpgl/archive/refs/tags/v0.6.0.tar.gz",
+    "version": "v0.6.0",
+    "hash": "4192a4096ee3e3d31878cd013f8de23418c8037c576537551f946c4811931c5e",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "LEVEL_ZERO",
+    "url": "https://codeload.github.com/oneapi-src/level-zero/tar.gz/refs/tags/v1.19.2",
+    "version": "1.19.2",
+    "hash": "b0bea0a09d1a68f68ecf8694e58a60e199fa5785f91c2fd59f026133bc1c4f28",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "DPCPP",
+    "url": "https://github.com/intel/llvm/archive/v6.1.0.tar.gz",
+    "version": "v6.1.0",
+    "hash": "a698b953527edeaca0495134cd2655ecaf4826128f85177c20a8749b18df49cd",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "VCINTRINSICS",
+    "url": "https://github.com/intel/vc-intrinsics/archive/2d78d5805670d83b3cc6dc488acbd7f0251340c1.tar.gz",
+    "version": "2d78d5805670d83b3cc6dc488acbd7f0251340c1",
+    "hash": "4acac1df6f0ddbfc32ab560f369e6de307a63560cd4843a5c2b02164a8a3caf2",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "OPENCLHEADERS",
+    "url": "https://github.com/KhronosGroup/OpenCL-Headers/archive/542d7a8f65ecfd88b38de35d8b10aa67b36b33b2.tar.gz",
+    "version": "542d7a8f65ecfd88b38de35d8b10aa67b36b33b2",
+    "hash": "026e2d39930fc9383f5472d45157254569ef712d11b644fbe4d317175250f409",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "ICDLOADER",
+    "url": "https://github.com/KhronosGroup/OpenCL-ICD-Loader/archive/804b6f040503c47148bee535230070da6b857ae4.tar.gz",
+    "version": "804b6f040503c47148bee535230070da6b857ae4",
+    "hash": "4a4b790fb67c0c37e63c9193c776b102b13f3fbb40e35ee383cfcd992552edfe",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "MP11",
+    "url": "https://github.com/boostorg/mp11/archive/863d8b8d2b20f2acd0b5870f23e553df9ce90e6c.tar.gz",
+    "version": "863d8b8d2b20f2acd0b5870f23e553df9ce90e6c",
+    "hash": "525692267abb8086bb9cc2fe81fb96d73ac645dfa6825cb5114686aafe244e9f",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSL-1.0"
+  },
+  {
+    "name": "DPCPP_SPIRV_HEADERS",
+    "url": "https://github.com/KhronosGroup/SPIRV-Headers/archive/efb6b4099ddb8fa60f62956dee592c4b94ec6a49.tar.gz",
+    "version": "efb6b4099ddb8fa60f62956dee592c4b94ec6a49",
+    "hash": "cb1f5b929f95169493f924f5aacf50ff9ce91e9470c28c5830a5ff4fca47062c",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT-Khronos-old"
+  },
+  {
+    "name": "UNIFIED_RUNTIME",
+    "url": "https://github.com/oneapi-src/unified-runtime/archive/v0.11.8.tar.gz",
+    "version": "v0.11.8",
+    "hash": "bb2d5d753ba23f8984431696b00b838cf6ff9eb5b1610bf262357b623bd6a4b6",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0 WITH LLVM-exception"
+  },
+  {
+    "name": "UNIFIED_MEMORY_FRAMEWORK",
+    "url": "https://github.com/oneapi-src/unified-memory-framework/archive/v0.10.0.tar.gz",
+    "version": "v0.10.0",
+    "hash": "fd8b1094fe471d08aebb84d3756bf410810a03e23e1c887b078c6ea73ac21258",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0 WITH LLVM-exception"
+  },
+  {
+    "name": "IGC",
+    "url": "https://github.com/intel/intel-graphics-compiler/archive/refs/tags/v2.1.14.tar.gz",
+    "version": "2.1.14",
+    "hash": "ebc39f8238dec2983c227d9db204db333b439ba5cd100e0a819a0208ac8066ca",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "IGC_LLVM",
+    "url": "https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-14.0.5.tar.gz",
+    "version": "llvmorg-14.0.5",
+    "hash": "a4a57f029cb81f04618e05853f05fc2d21b64353c760977d8e7799bf7218a23a",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0 WITH LLVM-exception"
+  },
+  {
+    "name": "IGC_OPENCL_CLANG",
+    "url": "https://github.com/intel/opencl-clang/archive/v14.0.1.tar.gz",
+    "version": "v14.0.1",
+    "hash": "77a023e311f825bbdc242fe9b397bd68bac23a88e68142b4919fa322c6c70392",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0 WITH LLVM-exception"
+  },
+  {
+    "name": "IGC_VCINTRINSICS",
+    "url": "https://github.com/intel/vc-intrinsics/archive/refs/tags/v0.20.1.tar.gz",
+    "version": "0.20.1",
+    "hash": "01a68a3c8299075ad2b094264bef5109d660f1d53faf614f4f95745ad05f4e3e",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "IGC_SPIRV_HEADERS",
+    "url": "https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.275.0.tar.gz",
+    "version": "vulkan-sdk-1.3.275.0",
+    "hash": "d46b261f1fbc5e85022cb2fada9a6facb5b0c9932b45007a77fe05639a605bd1",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT-Khronos-old"
+  },
+  {
+    "name": "IGC_SPIRV_TOOLS",
+    "url": "https://github.com/KhronosGroup/SPIRV-Tools/archive/refs/tags/v2023.6.rc1.tar.gz",
+    "version": "v2023.6.rc1",
+    "hash": "750e4bfcaccd636fb04dd912b668a8a6d29940f8f83b7d9a266170b1023a1a89",
+    "hash_type": "SHA256",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "IGC_SPIRV_TRANSLATOR",
+    "url": "https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/1cfcf1b5ec2ec9c52fd56dc7cb47dcf12125e8db.tar.gz",
+    "version": "1cfcf1b5ec2ec9c52fd56dc7cb47dcf12125e8db",
+    "hash": "5384344b47b67e3811419599c138284de5490304030096f3bc10271915a8ad76",
+    "hash_type": "SHA256",
+    "license": "SPDX:NCSA"
+  },
+  {
+    "name": "GMMLIB",
+    "url": "https://github.com/intel/gmmlib/archive/refs/tags/intel-gmmlib-22.5.3.tar.gz",
+    "version": "intel-gmmlib-22.5.3",
+    "hash": "a8ccba4a71319b66a901df016998a76745ce9624032b6555517607c5bbb2b4e8",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "OCLOC",
+    "url": "https://github.com/intel/compute-runtime/archive/refs/tags/24.45.31740.15.tar.gz",
+    "version": "24.45.31740.15",
+    "hash": "f0e3b3b038b585753530a8f1b00a8e71b045ee007b8392aaa986ccad92cf5123",
+    "hash_type": "SHA256",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "AOM",
+    "url": "https://storage.googleapis.com/aom-releases/libaom-3.4.0.tar.gz",
+    "version": "3.4.0",
+    "hash": "bd754b58c3fa69f3ffd29da77de591bd9c26970e3b18537951336d6c0252e354",
+    "hash_type": "SHA256",
+    "license": "SPDX:BSD-2-Clause"
+  },
+  {
+    "name": "FRIBIDI",
+    "url": "https://github.com/fribidi/fribidi/archive/refs/tags/v1.0.12.tar.gz",
+    "version": "v1.0.12",
+    "hash": "2e9e859876571f03567ac91e5ed3b5308791f31cda083408c2b60fa1fe00a39d",
+    "hash_type": "SHA256",
+    "license": "SPDX:LGPL-2.1-or-later"
+  },
+  {
+    "name": "HARFBUZZ",
+    "url": "https://github.com/harfbuzz/harfbuzz/archive/refs/tags/10.0.1.tar.gz",
+    "version": "10.0.1",
+    "hash": "e7358ea86fe10fb9261931af6f010d4358dac64f7074420ca9bc94aae2bdd542",
+    "hash_type": "SHA256",
+    "license": null
+  },
+  {
+    "name": "SHADERC",
+    "url": "https://github.com/google/shaderc/archive/v2024.3.tar.gz",
+    "version": "v2024.3",
+    "hash": "e8d45a77fe8bc954c3ca79aeba8476bd",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "SHADERC_SPIRV_TOOLS",
+    "url": "https://github.com/KhronosGroup/SPIRV-Tools/archive/01c8438ee4ac52c248119b7e03e0b021f853b51a.tar.gz",
+    "version": "01c8438ee4ac52c248119b7e03e0b021f853b51a",
+    "hash": "8924fd30abc3ee17b77cba5a924f3666",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "SHADERC_SPIRV_HEADERS",
+    "url": "https://github.com/KhronosGroup/SPIRV-Headers/archive/2a9b6f951c7d6b04b6c21fe1bf3f475b68b84801.tar.gz",
+    "version": "2a9b6f951c7d6b04b6c21fe1bf3f475b68b84801",
+    "hash": "f5fc63cd74f5b3deae18e2a1606b8241",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT-Khronos-old"
+  },
+  {
+    "name": "SHADERC_GLSLANG",
+    "url": "https://github.com/KhronosGroup/glslang/archive/467ce01c71e38cf01814c48987a5c0dadd914df4.tar.gz",
+    "version": "467ce01c71e38cf01814c48987a5c0dadd914df4",
+    "hash": "48baea8b66b0bfdc96a9d95a13b0b908",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "VULKAN_HEADERS",
+    "url": "https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.296.tar.gz",
+    "version": "1.3.296",
+    "hash": "3f4cd229d8f7c24c9b5a6ead3d674803",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "VULKAN_LOADER",
+    "url": "https://github.com/KhronosGroup/Vulkan-Loader/archive/refs/tags/v1.3.296.tar.gz",
+    "version": "1.3.296",
+    "hash": "bca05ec4914888990c92fa9c3e2738ff",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "VULKAN_UTILITY_LIBRARIES",
+    "url": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries/archive/refs/tags/v1.3.296.tar.gz",
+    "version": "1.3.296",
+    "hash": "02091bdc2b5862685da83b37a6c48821",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "VULKAN_MEMORY_ALLOCATOR",
+    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator/archive/refs/tags/v3.2.1.tar.gz",
+    "version": "3.2.1",
+    "hash": "f32b8374858566854e5f77564ea2e16d",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  },
+  {
+    "name": "SPIRV_HEADERS",
+    "url": "https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-1.3.296.0.tar.gz",
+    "version": "1.3.296",
+    "hash": "adee3d432b63f345c8ee6d625d0c8e6c",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "SPIRV_REFLECT",
+    "url": "https://github.com/KhronosGroup/SPIRV-Reflect/archive/refs/tags/vulkan-sdk-1.4.309.0.tar.gz",
+    "version": "1.4.309.0",
+    "hash": "11234b7d7895f69c3955e458c7b98914",
+    "hash_type": "MD5",
+    "license": "SPDX:Apache-2.0"
+  },
+  {
+    "name": "PYBIND11",
+    "url": "https://github.com/pybind/pybind11/archive/refs/tags/v2.10.1.tar.gz",
+    "version": "2.10.1",
+    "hash": "ce07bfd5089245da7807b3faf6cbc878",
+    "hash_type": "MD5",
+    "license": "SPDX:BSD-2-Clause"
+  },
+  {
+    "name": "HIPRT",
+    "url": "https://github.com/GPUOpen-LibrariesAndSDKs/HIPRT/archive/c4298933fe046e3f915977b5a69537a59aac8f47.tar.gz",
+    "version": "c4298933fe046e3f915977b5a69537a59aac8f47",
+    "hash": "65b8a975d23db04d908c758f3fb7bae3",
+    "hash_type": "MD5",
+    "license": "SPDX:MIT"
+  }
+]

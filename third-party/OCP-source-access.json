@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/CadQuery/ocp-build-system",
+  "commit": "eace4e42cfa2c162ac39bc36864534fe5f5787a6",
+  "source_archive": "https://github.com/CadQuery/ocp-build-system/archive/eace4e42cfa2c162ac39bc36864534fe5f5787a6.tar.gz",
+  "OCP_source": "https://github.com/CadQuery/OCP/releases/tag/8.0.1.1",
+  "OCCT_source": "https://github.com/Open-Cascade-SAS/OCCT/archive/refs/tags/V8_0_1.tar.gz",
+  "Linux_wrapper_sources": "https://github.com/CadQuery/OCP/releases/download/8.0.1.1/OCP_src_stubs_Linux.zip"
+}

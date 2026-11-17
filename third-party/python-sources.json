@@ -1,0 +1,172 @@
+[
+  {
+    "package": "rtree",
+    "version": "1.4.1",
+    "pypi": "https://pypi.org/pypi/rtree/1.4.1/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/95/09/7302695875a019514de9a5dd17b8320e7a19d6e7bc8f85dcfb79a4ce2da3/rtree-1.4.1.tar.gz"
+    ],
+    "links": {
+      "Documentation": "https://rtree.readthedocs.io",
+      "Repository": "https://github.com/Toblerity/rtree"
+    }
+  },
+  {
+    "package": "cadquery-ocp-novtk",
+    "version": "8.0.1.1.0",
+    "pypi": "https://pypi.org/pypi/cadquery-ocp-novtk/8.0.1.1.0/json",
+    "urls": [],
+    "links": null,
+    "additional_source": "https://github.com/CadQuery/ocp-build-system/tree/eace4e42cfa2c162ac39bc36864534fe5f5787a6"
+  },
+  {
+    "package": "trimesh",
+    "version": "5.2.1",
+    "pypi": "https://pypi.org/pypi/trimesh/5.2.1/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/66/08/9466d15653d236624149feb1158c441ecee0631e6a629eaf9567e32285b5/trimesh-5.2.1.tar.gz"
+    ],
+    "links": {
+      "documentation": "https://trimesh.org",
+      "homepage": "https://github.com/mikedh/trimesh"
+    }
+  },
+  {
+    "package": "coacd",
+    "version": "1.0.14",
+    "pypi": "https://pypi.org/pypi/coacd/1.0.14/json",
+    "urls": [],
+    "links": {
+      "Homepage": "https://colin97.github.io/CoACD/"
+    },
+    "additional_source": "https://github.com/SarahWeiii/CoACD"
+  },
+  {
+    "package": "pip",
+    "version": "24.0",
+    "pypi": "https://pypi.org/pypi/pip/24.0/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/94/59/6638090c25e9bc4ce0c42817b5a234e183872a1129735a9330c472cc2056/pip-24.0.tar.gz"
+    ],
+    "links": {
+      "Changelog": "https://pip.pypa.io/en/stable/news/",
+      "Documentation": "https://pip.pypa.io",
+      "Homepage": "https://pip.pypa.io/",
+      "Source": "https://github.com/pypa/pip"
+    }
+  },
+  {
+    "package": "cadquery-ocp-proxy",
+    "version": "8.0.1.1.0",
+    "pypi": "https://pypi.org/pypi/cadquery-ocp-proxy/8.0.1.1.0/json",
+    "urls": [],
+    "links": null,
+    "additional_source": "https://github.com/CadQuery/ocp-build-system/tree/eace4e42cfa2c162ac39bc36864534fe5f5787a6"
+  },
+  {
+    "package": "pathspec",
+    "version": "1.1.1",
+    "pypi": "https://pypi.org/pypi/pathspec/1.1.1/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/5a/82/42f767fc1c1143d6fd36efb827202a2d997a375e160a71eb2888a925aac1/pathspec-1.1.1.tar.gz"
+    ],
+    "links": {
+      "Change Log": "https://python-path-specification.readthedocs.io/en/latest/changes.html",
+      "Documentation": "https://python-path-specification.readthedocs.io/en/latest/index.html",
+      "Issue Tracker": "https://github.com/cpburnz/python-pathspec/issues",
+      "Source Code": "https://github.com/cpburnz/python-pathspec"
+    }
+  },
+  {
+    "package": "click",
+    "version": "8.5.1",
+    "pypi": "https://pypi.org/pypi/click/8.5.1/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/45/37/edbf1b0707709013c0cf2e8317e03d97ed29bf4cac709fe328904ae92a38/click-8.5.1.tar.gz"
+    ],
+    "links": {
+      "Changes": "https://click.palletsprojects.com/page/changes/",
+      "Chat": "https://discord.gg/pallets",
+      "Documentation": "https://click.palletsprojects.com/",
+      "Donate": "https://palletsprojects.com/donate",
+      "Source": "https://github.com/pallets/click/"
+    }
+  },
+  {
+    "package": "platformdirs",
+    "version": "4.14.5",
+    "pypi": "https://pypi.org/pypi/platformdirs/4.14.5/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/d7/9a/8475be631fb33ca1466915e70fd594c42a4e84b512db650eaa14f90fe75d/platformdirs-4.14.5.tar.gz"
+    ],
+    "links": {
+      "Changelog": "https://platformdirs.readthedocs.io/en/latest/changelog.html",
+      "Documentation": "https://platformdirs.readthedocs.io",
+      "Homepage": "https://github.com/tox-dev/platformdirs",
+      "Source": "https://github.com/tox-dev/platformdirs",
+      "Tracker": "https://github.com/tox-dev/platformdirs/issues"
+    }
+  },
+  {
+    "package": "pip",
+    "version": "24.0",
+    "pypi": "https://pypi.org/pypi/pip/24.0/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/94/59/6638090c25e9bc4ce0c42817b5a234e183872a1129735a9330c472cc2056/pip-24.0.tar.gz"
+    ],
+    "links": {
+      "Changelog": "https://pip.pypa.io/en/stable/news/",
+      "Documentation": "https://pip.pypa.io",
+      "Homepage": "https://pip.pypa.io/",
+      "Source": "https://github.com/pypa/pip"
+    }
+  },
+  {
+    "package": "pytokens",
+    "version": "0.4.1",
+    "pypi": "https://pypi.org/pypi/pytokens/0.4.1/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/b6/34/b4e015b99031667a7b960f888889c5bd34ef585c85e1cb56a594b92836ac/pytokens-0.4.1.tar.gz"
+    ],
+    "links": {
+      "Homepage": "https://github.com/tusharsadhwani/pytokens"
+    }
+  },
+  {
+    "package": "packaging",
+    "version": "26.3",
+    "pypi": "https://pypi.org/pypi/packaging/26.3/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/7d/fa/3944b40b07da9ce895c0e6303a5ab7d53da063554f534556b134a54d6093/packaging-26.3.tar.gz"
+    ],
+    "links": {
+      "Documentation": "https://packaging.pypa.io/",
+      "Source": "https://github.com/pypa/packaging"
+    }
+  },
+  {
+    "package": "mypy_extensions",
+    "version": "1.2.0",
+    "pypi": "https://pypi.org/pypi/mypy_extensions/1.2.0/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/d0/6f/43edf3be2748d0e40974a5ee046a8bb4c9961a4bdd3e7d5c6dcbf32d1af6/mypy_extensions-1.2.0.tar.gz"
+    ],
+    "links": {
+      "Homepage": "https://github.com/python/mypy_extensions"
+    }
+  },
+  {
+    "package": "black",
+    "version": "26.10.1",
+    "pypi": "https://pypi.org/pypi/black/26.10.1/json",
+    "urls": [
+      "https://files.pythonhosted.org/packages/f8/65/a9611a6ec0a8c88d86e59385da02d68d9533f7e86a05913d20c67be54029/black-26.10.1.tar.gz"
+    ],
+    "links": {
+      "Changelog": "https://github.com/psf/black/blob/main/CHANGES.md",
+      "Documentation": "https://black.readthedocs.io/",
+      "Issues": "https://github.com/psf/black/issues",
+      "Repository": "https://github.com/psf/black"
+    }
+  }
+]

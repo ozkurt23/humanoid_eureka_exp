@@ -1,11 +1,12 @@
-"""Download private release assets by name and verify them against the committed index."""
+"""Download release assets by name and verify them against the committed index."""
 import argparse
 import hashlib
 import json
 from pathlib import Path
 import subprocess
+import tempfile
 
-REPO = 'ozkurt23/humanoid-dual-pen-recovery'
+REPO = 'ozkurt23/humanoid_eureka_exp'
 TAG = 'v1.0.0'
 
 
@@ -34,16 +35,27 @@ def main():
         final = dest / name
         if final.is_file() and digest(final) == expected:
             continue
-        tmp = final.with_suffix('.tmp')
         print(name, flush=True)
-        with tmp.open('wb') as stream:
-            subprocess.run(['gh', 'api', '-H', 'Accept: application/octet-stream',
-                            f'repos/{REPO}/releases/assets/{asset["id"]}'],
-                           stdout=stream, check=True)
-        if digest(tmp) != expected:
-            raise ValueError(f'Dosya özeti eşleşmedi: {name}')
-        tmp.replace(final)
-    (dest / index.name).write_bytes(index.read_bytes())
+        with tempfile.NamedTemporaryFile(dir=dest, prefix='.' + name + '.', delete=False) as stream:
+            tmp = Path(stream.name)
+            try:
+                subprocess.run(['gh', 'api', '-H', 'Accept: application/octet-stream',
+                                f'repos/{REPO}/releases/assets/{asset["id"]}'],
+                               stdout=stream, check=True)
+                stream.flush()
+                if digest(tmp) != expected:
+                    raise ValueError(f'Dosya özeti eşleşmedi: {name}')
+                tmp.replace(final)
+            finally:
+                tmp.unlink(missing_ok=True)
+    with tempfile.NamedTemporaryFile(dir=dest, prefix='.manifest-', delete=False) as stream:
+        tmp = Path(stream.name)
+        try:
+            stream.write(index.read_bytes())
+            stream.flush()
+            tmp.replace(dest / index.name)
+        finally:
+            tmp.unlink(missing_ok=True)
 
 
 if __name__ == '__main__':

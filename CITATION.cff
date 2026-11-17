@@ -5,9 +5,9 @@ type: software
 authors:
   - family-names: "Özkurt"
     given-names: "Ali"
-version: "1.0.0"
+version: "1.1.0"
 date-released: 2026-11-17
-repository-code: "https://github.com/ozkurt23/humanoid-dual-pen-recovery"
+repository-code: "https://github.com/ozkurt23/humanoid_eureka_exp"
 preferred-citation:
   type: report
   title: "Bimanual Fingertip Manipulation During Humanoid Push Recovery"
@@ -16,4 +16,4 @@ preferred-citation:
       given-names: "Ali"
   year: 2026
   month: 11
-  url: "https://github.com/ozkurt23/humanoid-dual-pen-recovery/blob/v1.0.0/makale/Makale.pdf"
+  url: "https://github.com/ozkurt23/humanoid_eureka_exp/blob/v1.1.0/makale/Makale.pdf"

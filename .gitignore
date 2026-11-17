@@ -2,3 +2,10 @@ __pycache__/
 .venv/
 *.pyc
 work/parmak_denge/kosu-*.npz
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+token.json

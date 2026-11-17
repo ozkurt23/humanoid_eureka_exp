@@ -1,0 +1,104 @@
+# Build System for OCP
+
+## OCP 8.0.1.1
+
+**NOTE:** For final wheels always use the official sources from the [OCP repository](https://github.com/cadquery/OCP). This can be achieved by setting the environment variable `PYWRAP` to `false`. Only use `true` if you know what you do!
+
+### Recipe
+
+The github action can be found in [.github/workflows/build-ocp.yml](.github/workflows/build-ocp.yml)
+
+### Wheels
+
+The action creates three different types of delocated wheels for OCP 8.0.1.1:
+
+1. `cadquery_ocp-8.0.1.1.0` which is build against pypi's VTK 9.6.2
+2. `cadquery_ocp_novtk-8.0.1.1.0` which comes without VTK support
+3. `cadquery_ocp_proxy-8.0.1.1.0`, a dependecy of 1. and 2.
+
+The wheels `cadquery_ocp-8.0.1.1.0` and `cadquery_ocp_novtk-8.0.1.1.0` encapsulate the native OCP module into a folder `OCP`.
+
+```
+OCP
+├── Adaptor2d
+│   └── __init__.py
+├── Adaptor3d
+│   └── __init__.py
+...
+├── IVtk
+│   └── __init__.py
+├── IVtkOCC
+│   └── __init__.py
+├── IVtkTools
+│   └── __init__.py
+├── IVtkVTK
+│   └── __init__.py
+...
+├── OCP.cpython-311-x86_64-linux-gnu.so
+...
+```
+
+with `__init__.py` e.g. for `Adaptor2d` looking like
+
+```python
+from ..OCP.Adaptor2d import *
+```
+
+OCP behaves exactly like the conda version, i.e. you can just ìmport `OCP.BRep` as usual. However, error traces can involve `OCP.OCP.BRep ...` prefixing the module with the `OCP` folder
+
+### Supported Operation Systems
+
+The wheels are created for
+
+- **Windows (Intel)**
+- **MacOS (Intel)**: running from macOS 11.11 or newer
+- **MacOS (arm64)**: running from macOS 11.11 or newer
+- **Linux (Intel)**: running Ubuntu 20.04 or newer (GLIBC_2.31 and GLIBCXX_3.4.26)
+- **Linux (aarch46)**: running Ubuntu 20.04 on ARM or newer (GLIBC_2.31 and GLIBCXX_3.4.26)
+
+### Supported Python Versions
+
+- The `cadquery_ocp-8.0.1.1.0` version can be built with pypi's `vtk==9.6.2` for Python 3.11 - 3.14.
+- The `cadquery_ocp_novtk-8.0.1.1.0` version can be built for Python 3.11 - 3.14.
+
+### Tests
+
+- The **vtk** wheels are tested against `build123d` and `cadquery`
+- The **novtk** wheels are tested against a patched version of `build123d` only (vtk support removed)
+
+### Development
+
+The action heavily caches artifacts since some steps can take 0.5 - 1.5 h.
+
+For **vtk** wheels:
+
+- `VTK-9.6.2-py<version>-<os>-`: The generated VTK SDK
+- `OCCT-8.0.1-py-<version>-vtk-<os>-`: The compiled OCCT SDK with VTK support
+- `OCP-source-8.0.1.1-vtk-<os>-`: The generated OCP source with VTK support
+- `OCP-8.0.1.1-VTK-vtk-py<version>-<os>-`: The compiled OCP Python module with VTK support
+
+For **novtk** wheels:
+
+- `OCCT-8.0.1-py-<version>-novtk-<os>-`: The compiled OCCT SDK without VTK support
+- `OCP-8.0.1.1-VTK-novtk-py<version>-<os>-`: The compiled OCP Python module without VTK support
+
+`<os>` being "ubuntu-22.04", "ubuntu-22.04-arm", "macos-15-intel", "macos-15", and "windows-latest".
+`<version>` being "3.11", "3.12", "3.13", and "3.14",
+
+To recompile, delete the respective [cached elements](https://github.com/bernhard-42/repackage-ocp/actions/caches) first.
+
+## OCP 8.0.1.1 stubs
+
+`cadquery_ocp_stubs-8.0.1.1.0`, API stubs for OCP 8.0.1.1 are created by the above github workflow
+
+## Changes
+
+### v8.0.1.1
+
+- Tweak release fixing a regression with respect to OCP 7.9.3
+
+### v8.0.0.0
+
+- Support for Python 3.10 dropped
+- Compatibility functions TopoDS.Vertex_s, ... dropped
+- Special handling of VTK imports dropped [#63](https://github.com/CadQuery/ocp-build-system/issues/63)

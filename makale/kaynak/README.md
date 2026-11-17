@@ -19,3 +19,7 @@ For XeLaTeX, compile twice to resolve the bibliography and cross-references.
 - `paired-traces.csv` contains five observed-minus-omitted pelvis displacement profiles in the load direction, downsampled to 50 Hz with exact release samples retained. These data generate the time-aligned force-omission plot.
 - `ablation/` contains the paired controller analysis, single-factor patch, plotting script, instructions, and all 15 paired numerical outcomes. The corresponding full-width vector figure is `sekiller/ablation.pdf`. The supplementary raw trajectories and integrity manifest are in the project archive.
 - `pipeline.tex` documents the implementation from CAD assembly to MP4 decoding. Its simulation reconstruction uses `pipeline_figures.py /path/to/restored/project` with MuJoCo 3.8, NumPy and Pillow; the other panels reuse the corresponding Blender and decoded frames. The three images are included for compilation without MuJoCo.
+
+## Availability and licensing
+
+The public project is [humanoid_eureka_exp](https://github.com/ozkurt23/humanoid_eureka_exp). Original code uses the MIT license. Original design files use CERN-OHL-P-2.0. The paper, media, and data use CC BY 4.0. Third-party material retains its applicable license.

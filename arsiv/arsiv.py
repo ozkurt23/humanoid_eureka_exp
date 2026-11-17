@@ -32,7 +32,8 @@ def validate_parts(folder):
 
 def checked_name(name):
     path = PurePosixPath(name)
-    if not path.parts or path.is_absolute() or '..' in path.parts:
+    if (not path.parts or path.is_absolute() or '..' in path.parts
+            or str(path) != name.rstrip('/')):
         raise ValueError(f'Geçersiz yol {name}')
     return path
 
@@ -55,17 +56,22 @@ def unpack(parts, dest):
     dec = subprocess.Popen(['zstd','-dc','--long=27'],stdin=cat.stdout,stdout=subprocess.PIPE)
     cat.stdout.close()
     manifest = None
+    pending_symlinks = []
     try:
         with tarfile.open(fileobj=dec.stdout,mode='r|',bufsize=MIB) as archive:
             for item in archive:
                 path = checked_name(item.name)
+                for parent in path.parents:
+                    if observed.get(str(parent), (None,))[0] == 'symlink':
+                        raise ValueError(f'Bağ altına yazılamaz {path}')
                 if item.name == 'ENVANTER.jsonl':
                     if manifest is not None or not item.isreg():
                         raise ValueError('Çift envanter')
                     raw = archive.extractfile(item).read()
                     manifest = [json.loads(line) for line in raw.splitlines()]
                     if dest:
-                        (dest / item.name).write_bytes(raw)
+                        with (dest / item.name).open('xb') as stream:
+                            stream.write(raw)
                     continue
                 if item.name in observed:
                     raise ValueError(f'Çift yol {item.name}')
@@ -79,7 +85,7 @@ def unpack(parts, dest):
                     if target:target.mkdir(exist_ok=True)
                 elif item.issym():
                     observed[item.name]=('symlink',item.linkname)
-                    if target:target.symlink_to(item.linkname)
+                    if target:pending_symlinks.append((target, item.linkname))
                 elif item.islnk():
                     checked_name(item.linkname)
                     other = observed[item.linkname]
@@ -112,6 +118,8 @@ def unpack(parts, dest):
                     'symlink':lambda:(kind,row['target']), 'dir':lambda:(kind,)}[kind]()
         if observed.get(row['path']) != expected:raise ValueError(f'İçerik eşleşmedi {row["path"]}')
     if dest:
+        for target, linkname in pending_symlinks:
+            target.symlink_to(linkname)
         for row in manifest:
             if row.get('hardlink'):
                 a=dest / checked_name(row['hardlink'])

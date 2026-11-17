@@ -1,51 +1,60 @@
-# İtme altında iki kalemle yürüyüş
-
-Bir insansı robot, iki kalemi parmak uçlarında hareket ettirirken beklenmedik bir yanal itmeden sonra nereye basar? Bu proje, aynı fizik simülasyonunda ayak basışını, ileri yürüyüşe dönüşü ve kalemlerin ele göre hareketini ölçüyor.
+# humanoid_eureka_exp
 
 **Bimanual Fingertip Manipulation During Humanoid Push Recovery**  
-Ali Özkurt · 17 Kasım 2026
+Ali Özkurt · November 2026
 
-**[İngilizce makaleyi oku · PDF](makale/Makale.pdf)　 ·　 [Filmi aç · 1080p / 60 fps](medya/Film.mp4)　 ·　 [15 koşunun sonuçları](veri/Deney-ve-olcumler.md)**
+An AI-assisted robotics research project, from experiment design and debugging to simulation, evaluation, rendering, and a technical paper. The human set goals, reviewed motion, and requested corrections. The AI agent implemented and iterated on the experiments using local tools.
 
-[![İkinci itmede robotun basışı ile sol ve sağ elin eşzamanlı hareketi. Tam filmi açmak için seçin.](medya/Izleme.gif)](medya/Film.mp4)
+**[Read the paper](makale/Makale.pdf) · [Watch the 1080p / 60 fps film](medya/Film.mp4) · [Reproduce the experiment](docs/Yeniden-calistirma.md) · [Reuse and licenses](LICENSING.md)**
 
-*İkinci itmenin ilk dört saniyesi. Sağ üstte sol el, sağ altta sağ el gösteriliyor. Bu kesite tıklayarak 55 saniyelik özgün MP4 dosyasını açabilirsiniz.*
+[![A humanoid recovers from a lateral push while moving a pen in each hand. Click to watch the complete film.](medya/Izleme.gif)](medya/Film.mp4)
 
-| Filmdeki en güçlü itme | İtme yönünde adım | İki kalemin kendi eline göre hareketi |
-|:---|:---|:---|
-| **107,7 N** · tepe yükünde 1,82 s | **29,4 cm** · havadan yere yeni basış | **33,9° / 33,9°** · sol / sağ |
+The 55-second movie follows one continuous MuJoCo trajectory through ten camera views. Wrist-mounted views show each pen moving relative to its hand. Download the repository and open [index.html](index.html) to jump between the five pushes and inspect the measurements.
 
-## Filmi ölçümleriyle izle
+## What the robot does
 
-Depoyu bilgisayarınıza indirdikten sonra kökteki [index.html](index.html) dosyasını tarayıcınızda açın. Beş itmeden birini seçtiğinizde oynatıcı ilgili ana gider. Bütün kamera açıları aynı kesintisiz hareket kaydına bağlıdır. Kuvvet, temas, adım ve kalem ölçümlerini yan yana inceleyebilirsiniz. [Tam itme anındaki yakın çekimler](medya/Itme-aninda-iki-el.jpg)
+The simulation combines a humanoid, two tendon-driven V3 hands, and two free pens. An external generator varies lateral push timing, direction, strength, and duration. The controller estimates the load from the robot's observed dynamics and simulates candidate recovery steps. It then resumes forward walking while both hands keep moving their pens.
 
-## Çalışma yöntemi
+| Example from the film | Measurement |
+|---|---:|
+| Strongest lateral push | 107.7 N, held for 1.82 s |
+| Corresponding downwind recovery step | 29.4 cm |
+| Forward progress before the next push | 30.2 cm |
+| Pen-axis excursion relative to each hand during that push | 33.9° left / 33.9° right |
 
-1. **Dış kuvvet üretimi.** Simülatör robotun beline sağdan veya soldan yük uygular. Yeni takvimlerde kuvvetin başlangıcı, yönü, şiddeti ve süresi değişir. Denetleyici yükü ancak gerçekleşen hareketten kestirir.
-2. **Denge adımı.** Denetleyici mevcut durumu kopyalar ve olası basışları ileri simülasyonla karşılaştırır. Ayaklar hem çok açık hem öne arkaya kaymışsa önce yana basıp açıklığı daraltır, sonra ileri yürüyüşe döner.
-3. **Kalem hareketi.** İki serbest kalemin her birini V3 elinin tendon hareketi yönlendirir. Kalem kaydığında ilgili elin hareket genliği azalır. Kalem açısını parmaklarla aynı yönde dönen bileğe göre ölçeriz.
-4. **Eşlenmiş karşılaştırma.** Filmdeki her itme için başlangıç durumunu ve önceki itmeleri koruyarak bir koşu daha yürüttük. Seçili itmenin kuvvetini kaldırınca belin konumunun nasıl değiştiğini 500 Hz kayıttan ölçtük. En yüksek yükteki ikinci itmede, yük platosunun sonundaki fark itme yönünde 40,0 cm oldu.
+All physics runs and renders were performed on one Ubuntu workstation. Candidate rollout search can take longer than the simulated motion.
 
-## Sonuçlar
+## What the evaluation supports
 
-| Koşu grubu | Tüm ölçütleri karşılayan | Eksik kalan kayıtlar |
-|:---|:---:|:---|
-| Önceki zamanlamalar | 4 / 4 | — |
-| Film ve ek denemeler | 3 / 5 | 1042, 1052 |
-| Denetleyici sabitlendikten sonra ayrılan zamanlamalar | **5 / 6** | 1071 |
-| **Toplam** | **12 / 15** | **3 kayıt** |
+The complete task passed on **12 of 15 schedules**, including **5 of 6 schedules reserved after freezing the controller**. A pass requires all five pushes to meet the step, subsequent walking, fingertip-contact, and pen-motion criteria. Failed and interrupted trials are included.
 
-Başarı, 55 saniye boyunca ayak dışında yere değmeden beş itmenin **her birinde** en az 3 cm yanal adım ve ardından en az 2 cm ileri yürüyüş gerektirdi. Her iki elde karşılıklı parmak ucu teması örneklerin en az %98’ini kapsamalı, avuç teması olmamalı ve her kalem her itmede kendi eline göre en az 15° hareket etmeliydi. Başarısız koşular denge izleme sınırına ulaştığında durduruldu. Deney 60–115 N aralığında yanal itmelerle, tek model üzerinde ve yerel Ubuntu bilgisayarında yürütüldü. [Koşu bazında ölçümler](veri/Deney-ve-olcumler.md) · [Ham ölçümlerin özeti · JSON](veri/Olcumler.json)
+Disabling the lateral-first stance-closing rule produced **11 of 15** complete-task passes on the same schedules. Both versions passed the same five reserved schedules. In seed 714 both remained upright, while the intervention changed the fifth recovery step from downwind to upwind.
 
-Aynı 15 itme takvimiyle tekrarlanan ikinci deneyde, yürüyüşe dönüşte önce yana basma kuralını kapattık. Birleşik başarı 12/15’ten 11/15’e indi. Altı yeni takvimde iki koşul da 5/6 verdi. 714 numaralı kayıtta her iki robot da 55 saniyeyi tamamladı, ancak kural kapatıldığında beşinci adım itmenin ters yönüne düştü. [Eşlenmiş deney verileri ve tek değişiklik](supplement/stance-ablation/REPRODUCE.md) · [Tek tek itmelere ait ölçümler](supplement/event-audit/README.md)
+- [All trial measurements](veri/Olcumler.json)
+- [Audit of complete and interrupted push events](supplement/event-audit/README.md)
+- [Paired controller ablation, patch, and raw-record instructions](supplement/stance-ablation/REPRODUCE.md)
+- [Paper and editable LaTeX, figures, and data](makale/)
 
-## Makaleler ve proje dosyaları
+The study covers lateral pelvis pushes on one simulated robot. Hardware transfer and real-time control remain to be evaluated.
 
-- **Bu çalışma.** Deney düzeneği, yöntem, karşılaştırmalı sonuçlar, başarısız koşular ve sınırlılıklar. [İngilizce makale · PDF](makale/Makale.pdf)
-- **Ma ve ark.** Eureka’nın kalem döndüren el deneyi, parmak ucunda kalem hareketi görevimizin çıkış noktasıydı. Buradaki yürüyüş, durumu gözleyip aday basışları simüle eden bir denetleyiciyle üretildi. [Eureka: Human-Level Reward Design via Coding Large Language Models](https://eureka-research.github.io/)
-- **Qi ve ark.** Farklı nesneleri el içinde döndürme ve hareketi fiziksel ele aktarma üzerine karşılaştırmalı bir çalışma. [In-Hand Object Rotation via Rapid Motor Adaptation](https://proceedings.mlr.press/v205/qi23a.html)
-- **Pratt ve ark.** Yanal bozucu kuvvetin ardından atılacak denge adımının konumunu açıklayan *capture point* yaklaşımı. [Capture Point: A Step toward Humanoid Push Recovery](https://doi.org/10.1109/ICHR.2006.321385)
-- **Güncel robot öğrenmesi çalışmaları.** π0.5, farklı veri kaynaklarıyla eğitilmiş bir görme–dil–eylem modeliyle ev içi manipülasyonu inceler. DreamZero, video ve robot eylemlerini birlikte tahmin eden bir dünya–eylem modelidir. Bu iki çalışmanın özgün makaleleri akademik sunum için incelendi. [π0.5 · CoRL 2025](https://proceedings.mlr.press/v305/black25a.html) · [DreamZero · PDF](https://dreamzero0.github.io/DreamZero.pdf)
-- **Proje dosyaları.** [Tam arşiv ve geri yükleme](arsiv/README.md) · [Proje ve yayın planı](docs/Proje-plani.md)
+## AI's role and Eureka
 
-Hazır film koşusunu yerel bir Ubuntu kurulumunda üretmek için [yeniden çalıştırma adımlarını](docs/Yeniden-calistirma.md) izleyin. Bu depodaki taşınabilir model ile 924 numaralı kayıt yeniden çalıştırıldı. Pozlar, eklem durumları, temaslar ve her iki kalemin tüm örnekleri film kaydıyla birebir eşleşti.
+Eureka's reward-design experiments motivated the initial hand manipulation task. Early experiments used a local Qwen2.5-Coder-1.5B-Instruct model to propose numerical reward coefficients, followed by local controller search and PPO comparisons. Those exploratory records are preserved in the full archive.
+
+The final demonstration uses a model-based step-search controller and a tendon-motion controller with grip feedback. See [AI workflow and the historical role of Qwen](docs/AI-workflow.md) for the exact distinction.
+
+## Code, CAD, data, and media
+
+The runnable checkout includes the final controller and required model inputs. The [complete experiment archive](arsiv/README.md) includes editable CAD, previous experiments, learned checkpoints, successful and failed runs, Blender scenes, and the final movie's 3,300 rendered frames. Large records are available as release assets.
+
+Original code is **MIT**, original CAD and model designs are **CERN-OHL-P-2.0**, and the paper, original data and media are **CC BY 4.0**. Commercial reuse is allowed under these licenses. [Scope and attribution](LICENSING.md) · [Third-party software and model notices](THIRD_PARTY.md)
+
+## Research background
+
+- [Eureka: Human-Level Reward Design via Coding Large Language Models](https://eureka-research.github.io/)
+- [Capture Point: A Step toward Humanoid Push Recovery](https://doi.org/10.1109/ICHR.2006.321385)
+- [MuJoCo](https://mujoco.org/)
+- [π0.5: A Vision-Language-Action Model with Open-World Generalization](https://proceedings.mlr.press/v305/black25a.html)
+- [DreamZero: World Action Models are Zero-shot Policies](https://dreamzero0.github.io/DreamZero.pdf)
+
+[Citation metadata](CITATION.cff) · [Project plan](docs/Proje-plani.md) · [Türkçe proje özeti](docs/README-tr.md)

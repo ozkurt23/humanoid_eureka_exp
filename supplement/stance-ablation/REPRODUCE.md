@@ -28,11 +28,11 @@ The comparison verifies the true applied force byte-for-byte over each pair's co
 
 ## Recorded ablation trajectories
 
-From the repository root, download the four private release assets and verify before extraction.
+From the repository root, download the four release assets and verify before extraction.
 
 ```bash
 mkdir -p ablation-records
-gh release download v1.0.0 -R ozkurt23/humanoid-dual-pen-recovery --pattern 'ablation-*.tar.zst' --dir ablation-records
+gh release download v1.0.0 -R ozkurt23/humanoid_eureka_exp --pattern 'ablation-*.tar.zst' --dir ablation-records
 (cd ablation-records && sha256sum -c ../supplement/stance-ablation/ABLATION-SHA256SUMS)
 for bundle in ablation-records/*.tar.zst; do tar --zstd -xf "$bundle" -C ablation-records; done
 ```

@@ -1,0 +1,185 @@
+[
+  {
+    "package": "rtree",
+    "version": "1.4.1",
+    "archived_path": "work/cadenv/lib/python3.12/site-packages/rtree-1.4.1.dist-info",
+    "license": "MIT",
+    "project_links": [
+      "Documentation, https://rtree.readthedocs.io",
+      "Repository, https://github.com/Toblerity/rtree"
+    ],
+    "license_files": [
+      "licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "package": "cadquery-ocp-novtk",
+    "version": "8.0.1.1.0",
+    "archived_path": "work/cadenv/lib/python3.12/site-packages/cadquery_ocp_novtk-8.0.1.1.0.dist-info",
+    "license": "Apache-2.0",
+    "project_links": [],
+    "license_files": []
+  },
+  {
+    "package": "trimesh",
+    "version": "5.2.1",
+    "archived_path": "work/cadenv/lib/python3.12/site-packages/trimesh-5.2.1.dist-info",
+    "license": "The MIT License (MIT)\n        \n        Copyright (c) 2023 Michael Dawson-Haggerty\n        \n        Permission is hereby granted, free of charge, to any person obtaining a copy\n        of this software and associated documentation files (the \"Software\"), to deal\n        in the Software without restriction, including without limitation the rights\n        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n        copies of the Software, and to permit persons to whom the Software is\n        furnished to do so, subject to the following conditions:\n        \n        The above copyright notice and this permission notice shall be included in all\n        copies or substantial portions of the Software.\n        \n        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n        SOFTWARE.\n        ",
+    "project_links": [
+      "homepage, https://github.com/mikedh/trimesh",
+      "documentation, https://trimesh.org"
+    ],
+    "license_files": [
+      "licenses/LICENSE.md"
+    ]
+  },
+  {
+    "package": "coacd",
+    "version": "1.0.14",
+    "archived_path": "work/cadenv/lib/python3.12/site-packages/coacd-1.0.14.dist-info",
+    "license": "MIT",
+    "project_links": [],
+    "license_files": [
+      "LICENSE"
+    ]
+  },
+  {
+    "package": "pip",
+    "version": "24.0",
+    "archived_path": "work/cadenv/lib/python3.12/site-packages/pip-24.0.dist-info",
+    "license": "MIT",
+    "project_links": [
+      "Homepage, https://pip.pypa.io/",
+      "Documentation, https://pip.pypa.io",
+      "Source, https://github.com/pypa/pip",
+      "Changelog, https://pip.pypa.io/en/stable/news/"
+    ],
+    "license_files": [
+      "LICENSE.txt"
+    ]
+  },
+  {
+    "package": "cadquery-ocp-proxy",
+    "version": "8.0.1.1.0",
+    "archived_path": "work/cadenv/lib/python3.12/site-packages/cadquery_ocp_proxy-8.0.1.1.0.dist-info",
+    "license": "Apache-2.0",
+    "project_links": [],
+    "license_files": []
+  },
+  {
+    "package": "pathspec",
+    "version": "1.1.1",
+    "archived_path": "work/smooth/format-env/lib/python3.12/site-packages/pathspec-1.1.1.dist-info",
+    "license": null,
+    "project_links": [
+      "Change Log, https://python-path-specification.readthedocs.io/en/latest/changes.html",
+      "Documentation, https://python-path-specification.readthedocs.io/en/latest/index.html",
+      "Issue Tracker, https://github.com/cpburnz/python-pathspec/issues",
+      "Source Code, https://github.com/cpburnz/python-pathspec"
+    ],
+    "license_files": [
+      "licenses/LICENSE"
+    ]
+  },
+  {
+    "package": "click",
+    "version": "8.5.1",
+    "archived_path": "work/smooth/format-env/lib/python3.12/site-packages/click-8.5.1.dist-info",
+    "license": "BSD-3-Clause",
+    "project_links": [
+      "Changes, https://click.palletsprojects.com/page/changes/",
+      "Chat, https://discord.gg/pallets",
+      "Documentation, https://click.palletsprojects.com/",
+      "Donate, https://palletsprojects.com/donate",
+      "Source, https://github.com/pallets/click/"
+    ],
+    "license_files": [
+      "licenses/LICENSE.txt"
+    ]
+  },
+  {
+    "package": "platformdirs",
+    "version": "4.14.5",
+    "archived_path": "work/smooth/format-env/lib/python3.12/site-packages/platformdirs-4.14.5.dist-info",
+    "license": "MIT",
+    "project_links": [
+      "Changelog, https://platformdirs.readthedocs.io/en/latest/changelog.html",
+      "Documentation, https://platformdirs.readthedocs.io",
+      "Homepage, https://github.com/tox-dev/platformdirs",
+      "Source, https://github.com/tox-dev/platformdirs",
+      "Tracker, https://github.com/tox-dev/platformdirs/issues"
+    ],
+    "license_files": [
+      "licenses/LICENSE"
+    ]
+  },
+  {
+    "package": "pip",
+    "version": "24.0",
+    "archived_path": "work/smooth/format-env/lib/python3.12/site-packages/pip-24.0.dist-info",
+    "license": "MIT",
+    "project_links": [
+      "Homepage, https://pip.pypa.io/",
+      "Documentation, https://pip.pypa.io",
+      "Source, https://github.com/pypa/pip",
+      "Changelog, https://pip.pypa.io/en/stable/news/"
+    ],
+    "license_files": [
+      "LICENSE.txt"
+    ]
+  },
+  {
+    "package": "pytokens",
+    "version": "0.4.1",
+    "archived_path": "work/smooth/format-env/lib/python3.12/site-packages/pytokens-0.4.1.dist-info",
+    "license": "MIT License\n        \n        Copyright (c) 2024 Tushar Sadhwani\n        \n        Permission is hereby granted, free of charge, to any person obtaining a copy\n        of this software and associated documentation files (the \"Software\"), to deal\n        in the Software without restriction, including without limitation the rights\n        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n        copies of the Software, and to permit persons to whom the Software is\n        furnished to do so, subject to the following conditions:\n        \n        The above copyright notice and this permission notice shall be included in all\n        copies or substantial portions of the Software.\n        \n        THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\n        SOFTWARE.\n        ",
+    "project_links": [
+      "Homepage, https://github.com/tusharsadhwani/pytokens"
+    ],
+    "license_files": [
+      "licenses/LICENSE"
+    ]
+  },
+  {
+    "package": "packaging",
+    "version": "26.3",
+    "archived_path": "work/smooth/format-env/lib/python3.12/site-packages/packaging-26.3.dist-info",
+    "license": "Apache-2.0 OR BSD-2-Clause",
+    "project_links": [
+      "Documentation, https://packaging.pypa.io/",
+      "Source, https://github.com/pypa/packaging"
+    ],
+    "license_files": [
+      "licenses/LICENSE.APACHE",
+      "licenses/LICENSE",
+      "licenses/LICENSE.BSD"
+    ]
+  },
+  {
+    "package": "mypy_extensions",
+    "version": "1.2.0",
+    "archived_path": "work/smooth/format-env/lib/python3.12/site-packages/mypy_extensions-1.2.0.dist-info",
+    "license": "MIT",
+    "project_links": [
+      "Homepage, https://github.com/python/mypy_extensions"
+    ],
+    "license_files": [
+      "licenses/LICENSE"
+    ]
+  },
+  {
+    "package": "black",
+    "version": "26.10.1",
+    "archived_path": "work/smooth/format-env/lib/python3.12/site-packages/black-26.10.1.dist-info",
+    "license": "MIT",
+    "project_links": [
+      "Documentation, https://black.readthedocs.io/",
+      "Changelog, https://github.com/psf/black/blob/main/CHANGES.md",
+      "Repository, https://github.com/psf/black",
+      "Issues, https://github.com/psf/black/issues"
+    ],
+    "license_files": [
+      "licenses/LICENSE"
+    ]
+  }
+]

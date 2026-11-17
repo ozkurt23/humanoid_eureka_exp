@@ -9,7 +9,7 @@
 | İki görevi birlikte sına | Her itmede yere teması kesilen ayağın yeni iniş yerini, takip eden ileri yürüyüşü ve kalem ekseninin ele göre hareketini ölç. Avuç ve parmak ucu temaslarını fizik adımlarında kaydet. | [Ölçüm tablosu](../veri/Deney-ve-olcumler.md) |
 | Sonucu karşılaştır | Dört önceki zamanlamayı, film dahil beş ek koşuyu ve denetleyici sabitlendikten sonra altı yeni zamanlamayı ayrı raporla. Filmdeki her itmenin atlandığı beş eşlenmiş koşuyu karşılaştır. | [Koşular ve eşlenmiş ölçümler](../veri/Olcumler.json) |
 | Kanıtı görselleştir | Aynı 55 saniyelik kaydı on kamera açısından göster. Gövde, yere basış ve iki bileğe göre kalem hareketi için genel açıları eşzamanlı yakın çekimlerle birleştir. | [Bölüm seçilebilen yerel gösterim](../index.html) |
-| Birlikte sakla | Makaleyi, filmi, kaynakları, veriyi ve yeniden kurma yolunu özel depoda topla. Arşiv parçalarının bütünlüğünü denetle. | [Arşiv ve kurulum](../arsiv/README.md) |
+| Birlikte sakla | Makaleyi, filmi, kaynakları, veriyi ve yeniden kurma yolunu açık depoda topla. Arşiv parçalarının bütünlüğünü denetle. | [Arşiv ve kurulum](../arsiv/README.md) |
 
 ## Bulguların izlenebilirliği
 
